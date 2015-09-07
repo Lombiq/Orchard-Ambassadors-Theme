@@ -1,0 +1,6 @@
+Name: Ambassadors.Theme
+Author: Lombiq
+Website: http://www.lombiq.com
+Description: Theme for Orchard Ambassadors
+Version: 1.0
+BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme

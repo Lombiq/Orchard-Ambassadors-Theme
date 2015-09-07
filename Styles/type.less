@@ -1,0 +1,97 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
+@import "fonts";
+@import "variables";
+
+/* Typography
+***************************************************************/
+
+/* Variables */
+@ambassadors-base-font-size: 18px;
+
+/* General */
+.ambassadors-font-normal()
+{
+    font-family: "OpenSansLight";
+}
+
+.ambassadors-font-bold()
+{
+    font-family: "OpenSansBold";
+}
+
+.ambassadors-font-extrabold()
+{
+    font-family: "OpenSansBold";
+}
+
+.ambassadors-font-italic()
+{
+    font-family: "OpenSansItalic";
+}
+
+.ambassadors-font-light-italic()
+{
+    font-family: "OpenSansLightItalic";
+}
+
+.ambassadors-font-heading()
+{
+    font-family: "GeorgiaNormal";
+    color: @ambassadors-heading-color;
+}
+
+body
+{
+    .ambassadors-font-normal;
+}
+
+p
+{
+    text-align: justify;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6
+{
+    .ambassadors-font-heading();
+}
+
+h1
+{
+    font-size: 2.3em;
+
+    small
+    {
+        font-size: 2em;
+    }
+}
+
+h2
+{
+    font-size: 1.9em;
+
+    small
+    {
+        font-size: 1.8em;
+    }
+}
+
+h3
+{
+    font-size: 1.7em;
+}
+
+h4
+{
+    font-size: 1.5em;
+}
+
+h5
+{
+    font-size: 1.3em;
+}
+
+h6
+{
+    font-size: 1.1em;
+}
