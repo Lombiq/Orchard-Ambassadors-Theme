@@ -447,30 +447,31 @@ h6,
 .widget .projection-list h1,
 .widget .content-items h1 {
   font-family: "GeorgiaNormal";
-  color: #555555;
 }
 h1 {
-  font-size: 2.3em;
+  font-size: 1.7em;
 }
 h1 small {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 h2,
 .zone-content .projection-list h1,
 .zone-content .content-items h1,
 .widget h1 {
-  font-size: 1.9em;
+  font-size: 1.4em;
 }
 h2 small {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 h3,
 .widget .projection-list h1,
 .widget .content-items h1 {
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-style: normal;
+  margin: 2rem auto;
 }
 h5 {
   font-size: 1.3em;

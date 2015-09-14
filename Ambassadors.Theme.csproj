@@ -70,8 +70,14 @@
     <Content Include="Styles\fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
+    <Content Include="Styles\forms.css">
+      <DependentUpon>forms.less</DependentUpon>
+    </Content>
     <Content Include="Styles\general.css">
       <DependentUpon>general.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\navigation.css">
+      <DependentUpon>navigation.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
@@ -88,7 +94,9 @@
     <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
-    <Content Include="Placement.info" />
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -141,6 +149,22 @@
   <ItemGroup>
     <Content Include="Styles\general.css.map">
       <DependentUpon>general.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\navigation.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\navigation.css.map">
+      <DependentUpon>navigation.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\forms.css.map">
+      <DependentUpon>forms.css</DependentUpon>
     </Content>
   </ItemGroup>
   <PropertyGroup>
