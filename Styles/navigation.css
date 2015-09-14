@@ -85,7 +85,7 @@
   top: auto;
   left: auto;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -103,7 +103,7 @@
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -153,7 +153,7 @@
   top: auto;
   left: auto;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -174,7 +174,7 @@
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -467,7 +467,7 @@
     width: 1%;
   }
 }
-@media (min-width: 48em) and (min-width: 47.95em) {
+@media (min-width: 48em) and (min-width: 42.66em) {
   .widget-menu-widget .menu > li {
     display: table-cell;
     width: 1%;
@@ -622,7 +622,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .lead {
     font-size: 21px;
   }
@@ -965,15 +965,15 @@ h6 {
 #layout-wrapper #layout-navigation .zone-navigation {
   height: 7.5rem;
 }
-@media only screen and (min-width: 57.8em) {
+@media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation {
     float: none;
-    width: 57.8em;
+    width: 53.33em;
     margin: 0 auto;
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .menu {
-  width: 65%;
+  width: 70%;
   float: right;
   top: 1rem;
 }

@@ -147,7 +147,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .lead {
     font-size: 21px;
   }
@@ -489,7 +489,7 @@ body {
   color: #555555;
   font-family: "OpenSansLight";
 }
-body:before {
+body::before {
   content: '';
   position: absolute;
   top: 0;
@@ -529,7 +529,7 @@ a:visited {
 }
 #layout-wrapper #layout-header {
   background: #ffffff;
-  box-shadow: 0px 0px 20px #000000;
+  box-shadow: 0 0 1.11rem #000000;
   height: 7.5rem;
   margin: 0;
 }
@@ -540,10 +540,10 @@ a:visited {
   background-position: center left;
   vertical-align: middle;
 }
-@media only screen and (min-width: 57.8em) {
+@media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-header #header .zone-header {
     margin: 0 auto;
-    width: 57.8em;
+    width: 53.33em;
   }
 }
 #layout-wrapper #layout-header #header .zone-header #branding a {
@@ -554,19 +554,29 @@ a:visited {
   margin-right: 0;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content {
-  padding: 22rem 0 10rem;
+  padding: 22rem 0 1rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content {
+  position: relative;
   background-color: #ffffff;
-  box-shadow: 0px 0px 20px #555555;
-  border-radius: 30px;
-  border-top-left-radius: 0px;
+  box-shadow: 0 0 1.11rem #555555;
+  border-radius: 1.66rem;
+  border-top-left-radius: 0;
   padding: 0 5rem 5rem;
 }
-@media only screen and (min-width: 57.8em) {
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -3.2rem;
+  left: 0;
+  background: url("../Content/Images/logo-big.png") no-repeat bottom;
+}
+@media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content {
     margin: 0 auto;
-    width: 57.8em;
+    width: 53.33em;
   }
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content header h1 {
@@ -577,9 +587,74 @@ a:visited {
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content p {
   margin: 4rem 0;
 }
-#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content p #map {
-  width: 1160px;
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map {
   margin: auto -50px;
+  margin-bottom: 3rem;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map img {
+  width: 100%;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar {
+  margin: 3rem auto;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container {
+  margin: auto -15px;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result {
+  list-style: none;
+  padding: 0;
+  /*display: inline;*/
+  text-align: justify;
+  width: 100%;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
+  width: 400px;
+  background: #ffffff;
+  box-shadow: 0 0 1.11rem rgba(85, 85, 85, 0.5);
+  border-radius: 1.66rem;
+  border-top-left-radius: 0;
+  display: inline-block;
+  margin: 25px 20px;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-portrait {
+  background: url("../Content/Images/portrait.png");
+  width: 120px;
+  height: 200px;
+  float: left;
+  border-bottom-left-radius: 1.66rem;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details {
+  margin-left: 120px;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details h4 {
+  font-size: 1.11em;
+  margin: 2rem 2rem 0.5rem;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details p {
+  margin: 0.5rem 2rem;
+  font-size: 0.77em;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul {
+  padding: 0;
+  width: 100%;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul .ambassador-phone-number {
+  margin: 0.5rem 2rem;
+  display: inline;
+  box-shadow: none;
+  border-radius: unset;
+  font-size: 0.66em;
+  padding-left: 20px;
+  background: url("../Content/Images/phone-logo.png") no-repeat;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul .ambassador-location {
+  margin: 0.5rem 2rem;
+  display: inline;
+  box-shadow: none;
+  border-radius: unset;
+  font-size: 0.66em;
+  padding-left: 20px;
+  background: url("../Content/Images/location-sign.png") no-repeat;
 }
 #layout-wrapper #layout-footer #footer #footer-quad {
   margin-left: 0;

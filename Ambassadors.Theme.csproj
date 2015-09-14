@@ -67,6 +67,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Background.jpg" />
+    <Content Include="Content\Images\location-sign.png" />
+    <Content Include="Content\Images\logo-big.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\logo_small.png" />
+    <Content Include="Content\Images\phone-logo.png" />
+    <Content Include="Content\Images\portrait.png" />
+    <Content Include="Content\Images\search.png" />
     <Content Include="Styles\fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
