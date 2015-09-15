@@ -1274,8 +1274,8 @@ body {
 body {
   font-size: 18px;
   background: #000000;
-  background: url(../Content/Images/Background.jpg) no-repeat;
-  background-size: contain;
+  background: url(../Content/Images/Background.jpg) no-repeat fixed;
+  background-size: 100%;
   background-position: left top;
   line-height: 1.5em;
   color: #555555;
@@ -1283,14 +1283,20 @@ body {
 }
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0), #000000 60%, #000000 100%);
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0)20%, rgba(0, 0, 0, 0),#191919 50%, #191919 100%);*/
+  background: -moz-linear-gradient(top, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0) 45%, #191919 65%, #191919 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(25, 25, 25, 0)), color-stop(45%, rgba(25, 25, 25, 0)), color-stop(65%, #191919), color-stop(100%, #191919));
+  background: -webkit-linear-gradient(top, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0) 45%, #191919 65%, #191919 100%);
+  background: -o-linear-gradient(top, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0) 45%, #191919 65%, #191919 100%);
+  background: -ms-linear-gradient(top, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0) 45%, #191919 65%, #191919 100%);
+  background: linear-gradient(to bottom, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0) 45%, #191919 65%, #191919 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00191919', endColorstr='#191919', GradientType=0);
   background-attachment: fixed;
-  opacity: 1;
 }
 ol,
 ul {
@@ -1359,10 +1365,10 @@ a:visited {
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content::after {
   content: '';
   position: absolute;
-  top: 0;
   right: 0;
   bottom: -3.2rem;
   left: 0;
+  height: 7.4rem;
   background: url("../Content/Images/logo-big.png") no-repeat bottom;
 }
 @media only screen and (min-width: 53.33em) {
@@ -1380,7 +1386,7 @@ a:visited {
   margin: 4rem 0;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map {
-  margin: auto -50px;
+  margin: auto -5rem;
   margin-bottom: 3rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map img {
@@ -1388,37 +1394,38 @@ a:visited {
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar {
   margin: 3rem auto;
+  width: 100%;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container {
-  margin: auto -15px;
+  margin: auto -1.5rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result {
   list-style: none;
   padding: 0;
-  /*display: inline;*/
   text-align: justify;
   width: 100%;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
-  width: 400px;
+  width: 40rem;
   background: #ffffff;
   box-shadow: 0 0 1.11rem rgba(85, 85, 85, 0.5);
   border-radius: 1.66rem;
   border-top-left-radius: 0;
   display: inline-block;
-  margin: 25px 20px;
+  margin: 2.5rem 2rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-portrait {
   background: url("../Content/Images/portrait.png");
-  width: 120px;
-  height: 200px;
+  width: 12rem;
+  height: 20rem;
   float: left;
   border-bottom-left-radius: 1.66rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details {
-  margin-left: 120px;
+  margin-left: 12rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details h4 {
+  color: #757b71;
   font-size: 1.11em;
   margin: 2rem 2rem 0.5rem;
 }
@@ -1429,24 +1436,31 @@ a:visited {
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul {
   padding: 0;
   width: 100%;
+  margin: 0 2rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul .ambassador-phone-number {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0rem;
   display: inline;
   box-shadow: none;
   border-radius: unset;
   font-size: 0.66em;
-  padding-left: 20px;
+  padding-left: 2rem;
   background: url("../Content/Images/phone-logo.png") no-repeat;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details ul .ambassador-location {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0rem 0.5rem 1rem;
   display: inline;
   box-shadow: none;
   border-radius: unset;
   font-size: 0.66em;
-  padding-left: 20px;
+  padding-left: 2rem;
+  text-transform: uppercase;
   background: url("../Content/Images/location-sign.png") no-repeat;
+}
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-details .ambassador-description {
+  margin-right: 3rem;
+  line-height: 1.2em;
+  text-align: left;
 }
 #layout-wrapper #layout-footer #footer #footer-quad {
   margin-left: 0;
@@ -2337,9 +2351,9 @@ input {
   background-color: #f9f9f9;
   border: 0;
   border-radius: 0 0 0 1rem;
-  width: 80%;
+  /*width: 80%;*/
   height: 2em;
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem 2.5rem;
   outline: 0;
   box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   font-family: "GeorgiaItalic";
