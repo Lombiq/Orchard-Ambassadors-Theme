@@ -471,7 +471,8 @@ h3,
 h4 {
   font-size: 1em;
   font-style: normal;
-  margin: 2rem auto;
+  margin: 4rem auto;
+  color: #757b71;
 }
 h5 {
   font-size: 1.3em;
@@ -485,7 +486,7 @@ body {
   background: url(../Content/Images/Background.jpg) no-repeat fixed;
   background-size: 100%;
   background-position: left top;
-  line-height: 1.5em;
+  line-height: 1.6em;
   color: #555555;
   font-family: "OpenSansLight";
 }
@@ -585,13 +586,14 @@ a:visited {
     width: 53.33em;
   }
 }
-#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content header h1 {
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content h1 {
   border: 0;
   margin: 0;
   padding-top: 5rem;
+  padding-bottom: 0rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content p {
-  margin: 4rem 0;
+  margin: 3.5rem 0;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map {
   margin: auto -5rem;

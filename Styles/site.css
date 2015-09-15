@@ -836,7 +836,8 @@ h3,
 h4 {
   font-size: 1em;
   font-style: normal;
-  margin: 2rem auto;
+  margin: 4rem auto;
+  color: #757b71;
 }
 h5 {
   font-size: 1.3em;
@@ -1277,7 +1278,7 @@ body {
   background: url(../Content/Images/Background.jpg) no-repeat fixed;
   background-size: 100%;
   background-position: left top;
-  line-height: 1.5em;
+  line-height: 1.6em;
   color: #555555;
   font-family: "OpenSansLight";
 }
@@ -1377,13 +1378,14 @@ a:visited {
     width: 53.33em;
   }
 }
-#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content header h1 {
+#layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content h1 {
   border: 0;
   margin: 0;
   padding-top: 5rem;
+  padding-bottom: 0rem;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content p {
-  margin: 4rem 0;
+  margin: 3.5rem 0;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-map {
   margin: auto -5rem;
@@ -2339,12 +2341,6 @@ button,
   padding: 0;
   float: left;
 }
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button:hover,
-.button:hover {
-  /*background-color: lighten(@lincache-header-background-color, 10%);*/
-}
 legend {
   font-size: 1.2em;
 }
@@ -2360,10 +2356,6 @@ input {
   outline: 0;
   box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   font-family: "GeorgiaItalic";
-}
-input:focus {
-  /*background-color: @lincache-white;*/
-  /*box-shadow: 0 0 0.4rem @lincache-header-background-color;*/
 }
 input[type="checkbox"] {
   width: 1.125rem;
