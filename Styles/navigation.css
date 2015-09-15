@@ -899,6 +899,10 @@ p {
   font-family: GeorgiaBoldItalic;
   src: url(../Content/Fonts/Georgia/georgiaz.ttf);
 }
+@font-face {
+  font-family: Vani;
+  src: url(../Content/Fonts/Vani/Vani.ttf);
+}
 /* Typography
 ***************************************************************/
 /* Variables */
