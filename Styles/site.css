@@ -2336,6 +2336,8 @@ button,
   background: url("../Content/Images/search.png") center;
   box-shadow: none;
   outline: 0;
+  padding: 0;
+  float: left;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -2347,11 +2349,12 @@ legend {
   font-size: 1.2em;
 }
 input {
+  float: left;
   font-size: 1.3em;
   background-color: #f9f9f9;
   border: 0;
   border-radius: 0 0 0 1rem;
-  /*width: 80%;*/
+  width: 80rem;
   height: 2em;
   padding: 0.1rem 2.5rem;
   outline: 0;
