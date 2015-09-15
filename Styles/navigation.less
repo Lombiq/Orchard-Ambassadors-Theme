@@ -11,142 +11,178 @@
     {
         margin: 0;
         width: 100%;
-        position: absolute;
-        top: 0;
+        float: right;
+
+        @media @media-md
+        {
+            position: absolute;
+            top: 0;
+        }
 
         .zone-navigation
         {
-            height: 7.5rem;
+            /*height: 7.5rem;*/
+            background: @ambassadors-color-light-grey;
+            margin-top: 1.5rem;
 
             @media @media-md
             {
+                background: none;
                 float: none;
                 width: @screen-md-min;
                 margin: 0 auto;
+                height: 7.5rem;
             }
 
-            .menu
+            .widget-menu-widget .menu
             {
-                width: 70%;
-                float: right;
-                top: 1rem;
+                @media @media-md
+                {
+                    width: 70%;
+                    float: right;
+                    top: 1rem;
+                }
 
                 li
                 {
-                    vertical-align: middle;
+                    width: unset;
+                    display: block;
+                    margin: 0;
+                    /*height: 30px;*/
+                    @media @media-md
+                    {
+                        padding-top: 1rem;
+                        vertical-align: middle;
+                        float: left;
+                        display: inline-block;
+                    }
 
                     a
                     {
+                        padding: 0rem 2rem;
+
+                        @media @media-md
+                        {
+                            padding: 0.5rem 2rem;
+                        }
+
+                        text-align: left;
+                        color: @ambassadors-text-color;
+                        .ambassadors-font-georgia();
+                        text-decoration: none;
+                        display: inline-block;
+                        /*span
+                        {
+                            font-size: 12px;
+                            .ambassadors-font-georgia-italic();
+                        }*/
+                        &:hover, &:active, &:focus
+                        {
+                            background: none;
+                        }
+                    }
+
+                    &.current
+                    {
+                        a
+                        {
+                            .ambassadors-menuitem-style();
+
+                            &:hover, &:active, &:focus
+                            {
+                                .ambassadors-menuitem-style();
+                            }
+                        }
                     }
                 }
-            }
 
-            .widget-navigation
-            {
+                .last
+                {
+                    width: unset;
+                    float: left;
+                    display: inline-block;
+
+                    a
+                    {
+                        /*.ambassadors-menuitem-style();*/
+                        @media @media-md
+                        {
+                            .ambassadors-last-menuitem-style();
+                        }
+
+                        &:hover, &:active, &:focus
+                        {
+                            /*.ambassadors-menuitem-style();*/
+                            @media @media-md
+                            {
+                                .ambassadors-last-menuitem-style();
+                            }
+                        }
+                    }
+
+                    &.current
+                    {
+                        a
+                        {
+                            @media @media-md
+                            {
+                                .ambassadors-last-current-menuitem-style();
+                            }
+
+                            &:hover, &:active, &:focus
+                            {
+                                @media @media-md
+                                {
+                                    .ambassadors-last-current-menuitem-style();
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-.widget-menu-widget .menu
+.ambassadors-menuitem-style()
 {
-    li
+    padding-left: 2rem;
+
+    @media @media-md
     {
-        width: unset;
-        float: left;
-        display: inline-block;
-
-        a
-        {
-            text-align: left;
-            color: @ambassadors-text-color;
-            .ambassadors-font-georgia();
-            text-decoration: none;
-            padding: 0.5rem 2rem;
-            display: inline-block;
-            /*span
-        {
-            font-size: 12px;
-            .ambassadors-font-georgia-italic();
-        }*/
-            &:hover, &:active, &:focus
-            {
-                background: none;
-            }
-        }
-
-        &.current
-        {
-            a
-            {
-                color: @ambassadors-text-color;
-                background: none;
-                padding-left: 2.2rem;
-                text-decoration: none;
-                background-image: url("../Content/Images/logo_small.png");
-                background-repeat: no-repeat;
-                background-position: center left;
-                vertical-align: middle;
-                display: inline-block;
-
-                &:hover, &:active, &:focus
-                {
-                    color: @ambassadors-text-color;
-                    background: none;
-                    padding-left: 2.2rem;
-                    text-decoration: none;
-                    background-image: url("../Content/Images/logo_small.png");
-                    background-repeat: no-repeat;
-                    background-position: center left;
-                    vertical-align: middle;
-                    display: inline-block;
-                }
-            }
-        }
+        padding-left: 2.2rem;
     }
 
-    .last
+    color: @ambassadors-text-color;
+    background: none;
+    text-decoration: none;
+    background-image: url("../Content/Images/logo_small.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ambassadors-last-menuitem-style()
+{
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background: @ambassadors-navigation-apply-background-color;
+    color: @ambassadors-navigation-apply-text-color;
+}
+
+.ambassadors-last-current-menuitem-style()
+{
+    padding: 0.5rem 2rem;
+
+    @media @media-md
     {
-        width: unset;
-        float: left;
-        display: inline-block;
-
-        a
-        {
-            text-align: center;
-            border-radius: 1rem;
-            padding: 0.5rem 2rem;
-            background: @ambassadors-navigation-apply-background-color;
-            color: @ambassadors-navigation-apply-text-color;
-
-            &:hover, &:active, &:focus
-            {
-                text-align: center;
-                border-radius: 1rem;
-                padding: 0.5rem 2rem;
-                background: @ambassadors-navigation-apply-background-color;
-                color: @ambassadors-navigation-apply-text-color;
-            }
-        }
-
-        &.current
-        {
-            a
-            {
-                text-align: center;
-                border-radius: 1rem;
-                background: @ambassadors-navigation-apply-background-color;
-                color: @ambassadors-navigation-apply-text-color;
-                padding: 0.5rem 2rem;
-
-                &:hover, &:active, &:focus
-                {
-                    border-radius: 1rem;
-                    background: @ambassadors-navigation-apply-background-color;
-                    color: @ambassadors-navigation-apply-text-color;
-                    padding: 0.5rem 2rem;
-                }
-            }
-        }
+        padding: 0 2rem;
     }
+
+    text-align: center;
+    border-radius: 1rem;
+    background: @ambassadors-navigation-apply-background-color;
+    color: @ambassadors-navigation-apply-text-color;
 }

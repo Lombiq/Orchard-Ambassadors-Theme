@@ -4,13 +4,16 @@
 body
 {
     font-size: @ambassadors-base-font-size;
-    background: @ambassadors-background-color;
-    background: url(../Content/Images/Background.jpg) no-repeat fixed;
-    background-size: 100%;
-    background-position: left top;
+    background: @ambassadors-color-light-grey;
+
+    @media @media-md
+    {
+        background: url(../Content/Images/Background.jpg) no-repeat fixed;
+        background-size: 100%;
+        background-position: left top;
+    }
+
     line-height: 1.6em;
-
-
 
     &::before
     {
@@ -46,7 +49,6 @@ li
     margin: 1rem 0;
 }
 
-
 a
 {
     color: @ambassadors-link-color;
@@ -74,14 +76,22 @@ a
     #layout-header
     {
         background: @ambassadors-header-background-color;
-        box-shadow: 0 0 1.11rem #000000;
+        box-shadow: 0 0 1.11rem @ambassadors-color-black;
         height: 7.5rem;
         margin: 0;
-
+        width: 100%;
+        /*@media @media-md
+        {
+            margin: 0;
+            width: @screen-md-min;
+        }*/
         #header
         {
+            width: 100%;
+
             .zone-header
             {
+                /*width: 100%;*/
                 @media @media-md
                 {
                     margin: 0 auto;
@@ -114,7 +124,12 @@ a
         {
             #layout-content
             {
-                padding: 22rem 0 1rem;
+                padding: 0 0 1rem;
+
+                @media @media-md
+                {
+                    padding: 22rem 0 1rem;
+                }
 
                 #content
                 {
@@ -133,9 +148,13 @@ a
                             background: url("../Content/Images/logo-big.png") no-repeat bottom;
                         }
 
+                        @media @media-md
+                        {
+                            border-radius: 1.66rem;
+                        }
+
+                        box-shadow: 0 0 1.11rem @ambassadors-color-medium-grey;
                         background-color: @ambassadors-content-background-color;
-                        box-shadow: 0 0 1.11rem #555555;
-                        border-radius: 1.66rem;
                         border-top-left-radius: 0;
                         padding: 0 5rem 5rem;
 
@@ -232,22 +251,14 @@ a
                                             .ambassador-phone-number
                                             {
                                                 margin: 0.5rem 0rem;
-                                                display: inline;
-                                                box-shadow: none;
-                                                border-radius: unset;
-                                                font-size: 0.66em;
-                                                padding-left: 2rem;
+                                                .ambassadors-contact-detail-style();
                                                 background: url("../Content/Images/phone-logo.png") no-repeat;
                                             }
 
                                             .ambassador-location
                                             {
                                                 margin: 0.5rem 0rem 0.5rem 1rem;
-                                                display: inline;
-                                                box-shadow: none;
-                                                border-radius: unset;
-                                                font-size: 0.66em;
-                                                padding-left: 2rem;
+                                                .ambassadors-contact-detail-style();
                                                 text-transform: uppercase;
                                                 background: url("../Content/Images/location-sign.png") no-repeat;
                                             }
@@ -289,28 +300,18 @@ a
                     font-size: 0.77em;
                     .ambassadors-font-vani-normal();
                     padding: 0;
-                    /*padding: 0.5rem 1.5rem;*/
-                    /*height: 4rem;*/
 
                     .user-display
                     {
                         padding: 0.7rem 0 0.4rem 0;
+
                         a
                         {
-                            color: @ambassadors-footer-link-color;
-                            .ambassadors-font-vani-normal();
-                            text-decoration: none;
+                            .ambassadors-footer-link-style();
 
-                            &:hover
+                            &:hover, &:active, &:visited
                             {
-                                color: @ambassadors-footer-link-color;
-                                text-decoration: none;
-                            }
-
-                            &:active, &:visited
-                            {
-                                color: @ambassadors-footer-link-color;
-                                text-decoration: none;
+                                .ambassadors-footer-link-style()
                             }
                         }
 
@@ -323,17 +324,33 @@ a
                         text-align: center;
                         margin: 10rem 0 0;
                         border-top: 1px solid @ambassadors-footer-border-color;
-                        background: #303030; /* Old browsers */
-                        background: -moz-linear-gradient(top, #303030 0 #222222 100%); /* FF3.6+ */
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#303030), color-stop(100%,#222222)); /* Chrome,Safari4+ */
-                        background: -webkit-linear-gradient(top, #303030 0,#222222 100%); /* Chrome10+,Safari5.1+ */
-                        background: -o-linear-gradient(top, #303030 0,#222222 100%); /* Opera 11.10+ */
-                        background: -ms-linear-gradient(top, #303030 0,#222222 100%); /* IE10+ */
-                        background: linear-gradient(to bottom, #303030 0,#222222 100%); /* W3C */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+                        background: #303030;
+                        background: -moz-linear-gradient(top, #303030 0 #222222 100%);
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#303030), color-stop(100%,#222222));
+                        background: -webkit-linear-gradient(top, #303030 0,#222222 100%);
+                        background: -o-linear-gradient(top, #303030 0,#222222 100%);
+                        background: -ms-linear-gradient(top, #303030 0,#222222 100%);
+                        background: linear-gradient(to bottom, #303030 0,#222222 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#222222',GradientType=0 );
                     }
                 }
             }
         }
     }
+}
+
+.ambassadors-footer-link-style()
+{
+    .ambassadors-font-vani-normal();
+    color: @ambassadors-footer-link-color;
+    text-decoration: none;
+}
+
+.ambassadors-contact-detail-style()
+{
+    display: inline;
+    box-shadow: none;
+    border-radius: unset;
+    font-size: 0.66em;
+    padding-left: 2rem;
 }

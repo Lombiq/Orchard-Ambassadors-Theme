@@ -2,7 +2,7 @@
 
 <div class="user-display">
     <span class="user-actions powered-by-orchard">
-        @T("Powered by {0} &copy Lombiq.", "<a href=\"http://orchardproject.net/+\">Orchard</a>")
+        @T("Powered by {0} &copy Lombiq.", "<a href=\"http://orchardproject.net/\">Orchard</a>")
     </span>
     @if (WorkContext.CurrentUser != null)
     {
@@ -18,6 +18,6 @@
         <span class="user-actions">@Html.ActionLink(T("Sign In").ToString(), "LogOn", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = (Request.QueryString["ReturnUrl"] ?? Request.RawUrl) }, new { rel = "nofollow" })</span>
     }
     <span class="user-actions powered-by-dotnest">
-        @T("Powered by {0}, the Orchard SaaS platform fueled by {1}", "<a href=\"http://orchardproject.net/+\">DotNest</a>", "<a href=\"http://orchardproject.net/+\">Lombiq</a>")
+        @T("Powered by {0}, the Orchard SaaS platform fueled by {1}", "<a href=\"https://dotnest.com/\">DotNest</a>", "<a href=\"http://lombiq.com/\">Lombiq</a>")
     </span>
 </div>
