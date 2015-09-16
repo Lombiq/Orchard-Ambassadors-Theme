@@ -1012,7 +1012,7 @@ h6 {
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
-  padding: 0 2.4rem;
+  padding: 0 1.5rem 0 2.4rem;
   text-align: left;
   color: #555555;
   font-family: "GeorgiaNormal";
@@ -1021,7 +1021,7 @@ h6 {
 }
 @media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem 0.5rem 2.4rem;
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a span {
@@ -1047,7 +1047,7 @@ h6 {
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a {
-    padding-left: 2.2rem;
+    padding-left: 2.4rem;
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:hover,
@@ -1068,7 +1068,7 @@ h6 {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:focus {
-    padding-left: 2.2rem;
+    padding-left: 2.4rem;
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last {
