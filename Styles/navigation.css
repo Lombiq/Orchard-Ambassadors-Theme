@@ -1012,7 +1012,7 @@ h6 {
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
-  padding: 0rem 2rem;
+  padding: 0 2.4rem;
   text-align: left;
   color: #555555;
   font-family: "GeorgiaNormal";
@@ -1034,13 +1034,14 @@ h6 {
   background: none;
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a {
-  padding-left: 2rem;
+  padding-left: 2.4rem;
   color: #555555;
   background: none;
   text-decoration: none;
   background-image: url("../Content/Images/logo_small.png");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 0 45%;
+  /*background-position: top left;*/
   vertical-align: middle;
   display: inline-block;
 }
@@ -1052,13 +1053,14 @@ h6 {
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:hover,
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:active,
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li.current a:focus {
-  padding-left: 2rem;
+  padding-left: 2.4rem;
   color: #555555;
   background: none;
   text-decoration: none;
   background-image: url("../Content/Images/logo_small.png");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 0 45%;
+  /*background-position: top left;*/
   vertical-align: middle;
   display: inline-block;
 }
