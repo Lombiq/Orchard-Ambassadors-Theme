@@ -1,4 +1,11 @@
-﻿/* Common
+﻿/* Breadcrumbs
+   Some LESS variables that you can configure from your derived theme.
+***************************************************************/
+/* Variables
+***************************************************************/
+/* Colors */
+/* Media queries */
+/* Common
    Common imports needed in every PGBBT LESS file.
 ***************************************************************/
 h1,
@@ -383,55 +390,48 @@ p {
 ***************************************************************/
 @font-face {
   font-family: OpenSansLight;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Light.ttf);
+  src: url(../../Content/Fonts/OpenSans/OpenSans-Light.ttf);
 }
 @font-face {
   font-family: OpenSansBold;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Bold.ttf);
+  src: url(../../Content/Fonts/OpenSans/OpenSans-Bold.ttf);
 }
 @font-face {
   font-family: OpenSansExtraBold;
-  src: url(../Content/Fonts/OpenSans/OpenSans-ExtraBold.ttf);
+  src: url(../../Content/Fonts/OpenSans/OpenSans-ExtraBold.ttf);
 }
 @font-face {
   font-family: OpenSansItalic;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Italic.ttf);
+  src: url(../../Content/Fonts/OpenSans/OpenSans-Italic.ttf);
 }
 @font-face {
   font-family: OpenSansLightItalic;
-  src: url(../Content/Fonts/OpenSans/OpenSans-LightItalic.ttf);
+  src: url(../../Content/Fonts/OpenSans/OpenSans-LightItalic.ttf);
 }
 @font-face {
   font-family: GeorgiaNormal;
-  src: url(../Content/Fonts/Georgia/georgia.ttf);
+  src: url(../../Content/Fonts/Georgia/georgia.ttf);
 }
 @font-face {
   font-family: GeorgiaBold;
-  src: url(../Content/Fonts/Georgia/georgiab.ttf);
+  src: url(../../Content/Fonts/Georgia/georgiab.ttf);
 }
 @font-face {
   font-family: GeorgiaItalic;
-  src: url(../Content/Fonts/Georgia/georgiai.ttf);
+  src: url(../../Content/Fonts/Georgia/georgiai.ttf);
 }
 @font-face {
   font-family: GeorgiaBoldItalic;
-  src: url(../Content/Fonts/Georgia/georgiaz.ttf);
+  src: url(../../Content/Fonts/Georgia/georgiaz.ttf);
 }
 @font-face {
   font-family: Vani;
-  src: url(../Content/Fonts/Vani/Vani.ttf);
+  src: url(../../Content/Fonts/Vani/Vani.ttf);
 }
 @font-face {
   font-family: VaniBold;
-  src: url(../Content/Fonts/Vani/Vanib.ttf);
+  src: url(../../Content/Fonts/Vani/Vanib.ttf);
 }
-/* Breadcrumbs
-   Some LESS variables that you can configure from your derived theme.
-***************************************************************/
-/* Variables
-***************************************************************/
-/* Colors */
-/* Media queries */
 /* Typography
 ***************************************************************/
 /* Variables */
@@ -488,4 +488,4 @@ h5 {
 h6 {
   font-size: 1.1em;
 }
-/*# sourceMappingURL=type.css.map */
+/*# sourceMappingURL=mixins.css.map */

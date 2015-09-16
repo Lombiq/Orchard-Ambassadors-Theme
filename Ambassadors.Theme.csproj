@@ -84,8 +84,14 @@
     <Content Include="Styles\general.css">
       <DependentUpon>general.less</DependentUpon>
     </Content>
+    <Content Include="Styles\mixins\mixins.css">
+      <DependentUpon>mixins.less</DependentUpon>
+    </Content>
     <Content Include="Styles\navigation.css">
       <DependentUpon>navigation.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\pages.css">
+      <DependentUpon>pages.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
@@ -119,7 +125,9 @@
   <ItemGroup>
     <Content Include="Styles\site.less" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Styles\pages.less" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\site.css.map">
       <DependentUpon>site.css</DependentUpon>
@@ -175,6 +183,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\pages.css.map">
+      <DependentUpon>pages.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.MenuWidget-MenuWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\mixins\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\mixins\mixins.css.map">
+      <DependentUpon>mixins.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

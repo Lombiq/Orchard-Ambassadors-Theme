@@ -1,5 +1,6 @@
 ﻿@import "variables";
 @import "type";
+@import "mixins/mixins";
 
 body
 {
@@ -80,18 +81,13 @@ a
         height: 7.5rem;
         margin: 0;
         width: 100%;
-        /*@media @media-md
-        {
-            margin: 0;
-            width: @screen-md-min;
-        }*/
+
         #header
         {
             width: 100%;
 
             .zone-header
             {
-                /*width: 100%;*/
                 @media @media-md
                 {
                     margin: 0 auto;
@@ -151,18 +147,14 @@ a
                         @media @media-md
                         {
                             border-radius: 1.66rem;
+                            border-top-left-radius: 0;
+                            margin: 0 auto;
+                            width: @screen-md-min;
                         }
 
                         box-shadow: 0 0 1.11rem @ambassadors-color-medium-grey;
                         background-color: @ambassadors-content-background-color;
-                        border-top-left-radius: 0;
                         padding: 0 5rem 5rem;
-
-                        @media @media-md
-                        {
-                            margin: 0 auto;
-                            width: @screen-md-min;
-                        }
 
                         h1
                         {
@@ -190,8 +182,33 @@ a
 
                         .ambassadors-searchbar
                         {
-                            margin: 3rem auto;
                             width: 100%;
+
+                            .ambassadors-search-input
+                            {
+                                width: 85%;
+                                margin: 0 auto;
+
+                                @media @media-md
+                                {
+                                    width: 94%;
+                                }
+                            }
+
+                            .ambassadors-search-button
+                            {
+                                width: 2.1em;
+                                border: 0;
+                                border-radius: 0 1rem 1rem 0;
+                                margin-top: 0;
+                                background: url("../Content/Images/search.png") center;
+                                box-shadow: none;
+                                outline: 0;
+                                padding: 0;
+                                float: left;
+                            }
+
+                            margin: 3rem auto;
                         }
 
                         .ambassadors-search-result-container
@@ -207,7 +224,13 @@ a
 
                                 li
                                 {
-                                    width: 40rem;
+                                    width: 90%;
+
+                                    @media @media-md
+                                    {
+                                        width: 40rem;
+                                    }
+
                                     background: @ambassadors-content-background-color;
                                     box-shadow: 0 0 1.11rem rgba(85, 85, 85, 0.5);
                                     border-radius: 1.66rem;
@@ -320,6 +343,16 @@ a
                             margin: auto 2rem;
                         }
 
+                        .powered-by-orchard
+                        {
+                            margin-left: 0;
+                        }
+
+                        .powered-by-dotnest
+                        {
+                            margin-right: 0;
+                        }
+
                         width: 100%;
                         text-align: center;
                         margin: 10rem 0 0;
@@ -337,20 +370,4 @@ a
             }
         }
     }
-}
-
-.ambassadors-footer-link-style()
-{
-    .ambassadors-font-vani-normal();
-    color: @ambassadors-footer-link-color;
-    text-decoration: none;
-}
-
-.ambassadors-contact-detail-style()
-{
-    display: inline;
-    box-shadow: none;
-    border-radius: unset;
-    font-size: 0.66em;
-    padding-left: 2rem;
 }

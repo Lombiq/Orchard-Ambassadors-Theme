@@ -1,6 +1,7 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
 @import "variables";
 @import "type";
+@import "mixins/mixins";
 
 /* Navigation
 ***************************************************************/
@@ -21,9 +22,9 @@
 
         .zone-navigation
         {
-            /*height: 7.5rem;*/
             background: @ambassadors-color-light-grey;
             margin-top: 1.5rem;
+            padding-right: 0;
 
             @media @media-md
             {
@@ -38,7 +39,8 @@
             {
                 @media @media-md
                 {
-                    width: 70%;
+                    padding-left: 31.5rem;
+                    width: 100%;
                     float: right;
                     top: 1rem;
                 }
@@ -48,7 +50,7 @@
                     width: unset;
                     display: block;
                     margin: 0;
-                    /*height: 30px;*/
+
                     @media @media-md
                     {
                         padding-top: 1rem;
@@ -71,11 +73,13 @@
                         .ambassadors-font-georgia();
                         text-decoration: none;
                         display: inline-block;
-                        /*span
+
+                        span
                         {
                             font-size: 12px;
                             .ambassadors-font-georgia-italic();
-                        }*/
+                        }
+
                         &:hover, &:active, &:focus
                         {
                             background: none;
@@ -104,7 +108,6 @@
 
                     a
                     {
-                        /*.ambassadors-menuitem-style();*/
                         @media @media-md
                         {
                             .ambassadors-last-menuitem-style();
@@ -112,7 +115,6 @@
 
                         &:hover, &:active, &:focus
                         {
-                            /*.ambassadors-menuitem-style();*/
                             @media @media-md
                             {
                                 .ambassadors-last-menuitem-style();
@@ -142,47 +144,4 @@
             }
         }
     }
-}
-
-.ambassadors-menuitem-style()
-{
-    padding-left: 2rem;
-
-    @media @media-md
-    {
-        padding-left: 2.2rem;
-    }
-
-    color: @ambassadors-text-color;
-    background: none;
-    text-decoration: none;
-    background-image: url("../Content/Images/logo_small.png");
-    background-repeat: no-repeat;
-    background-position: center left;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.ambassadors-last-menuitem-style()
-{
-    border-radius: 1rem;
-    padding: 0.5rem 2rem;
-    text-align: center;
-    background: @ambassadors-navigation-apply-background-color;
-    color: @ambassadors-navigation-apply-text-color;
-}
-
-.ambassadors-last-current-menuitem-style()
-{
-    padding: 0.5rem 2rem;
-
-    @media @media-md
-    {
-        padding: 0 2rem;
-    }
-
-    text-align: center;
-    border-radius: 1rem;
-    background: @ambassadors-navigation-apply-background-color;
-    color: @ambassadors-navigation-apply-text-color;
 }

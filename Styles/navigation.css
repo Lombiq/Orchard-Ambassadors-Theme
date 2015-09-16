@@ -903,6 +903,10 @@ p {
   font-family: Vani;
   src: url(../Content/Fonts/Vani/Vani.ttf);
 }
+@font-face {
+  font-family: VaniBold;
+  src: url(../Content/Fonts/Vani/Vanib.ttf);
+}
 /* Typography
 ***************************************************************/
 /* Variables */
@@ -973,9 +977,9 @@ h6 {
   }
 }
 #layout-wrapper #layout-navigation .zone-navigation {
-  /*height: 7.5rem;*/
   background: #e9ede6;
   margin-top: 1.5rem;
+  padding-right: 0;
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation {
@@ -988,7 +992,8 @@ h6 {
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu {
-    width: 70%;
+    padding-left: 31.5rem;
+    width: 100%;
     float: right;
     top: 1rem;
   }
@@ -997,7 +1002,6 @@ h6 {
   width: unset;
   display: block;
   margin: 0;
-  /*height: 30px;*/
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li {
@@ -1014,16 +1018,15 @@ h6 {
   font-family: "GeorgiaNormal";
   text-decoration: none;
   display: inline-block;
-  /*span
-                        {
-                            font-size: 12px;
-                            .ambassadors-font-georgia-italic();
-                        }*/
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
     padding: 0.5rem 2rem;
   }
+}
+#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a span {
+  font-size: 12px;
+  font-family: "GeorgiaItalic";
 }
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a:hover,
 #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a:active,
@@ -1071,9 +1074,6 @@ h6 {
   float: left;
   display: inline-block;
 }
-#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a {
-  /*.ambassadors-menuitem-style();*/
-}
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a {
     border-radius: 1rem;
@@ -1082,11 +1082,6 @@ h6 {
     background: #555555;
     color: #ffffff;
   }
-}
-#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:hover,
-#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:active,
-#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:focus {
-  /*.ambassadors-menuitem-style();*/
 }
 @media only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:hover,
