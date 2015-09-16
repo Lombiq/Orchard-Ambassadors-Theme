@@ -1,14 +1,4 @@
-﻿.login-form input:not([type]),
-.login-form input[type="search"],
-.login-form input[type="email"],
-.login-form input[type="password"],
-.login-form input[type="text"],
-.login-form input[type="url"],
-.login-form select,
-.login-form textarea {
-  width: 100%;
-}
-.login-form ol {
+﻿.login-form ol {
   list-style: none;
   padding: 0;
 }

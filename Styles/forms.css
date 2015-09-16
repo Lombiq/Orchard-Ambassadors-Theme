@@ -493,12 +493,19 @@ input[type="button"],
 button,
 .button {
   margin: 1em 0;
-  padding: 0;
+  padding: 0.1em 1em;
 }
 legend {
   font-size: 1.2em;
 }
-input {
+input:not([type]),
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
   float: left;
   font-size: 1.3em;
   background-color: #f9f9f9;
@@ -510,11 +517,6 @@ input {
   outline: 0;
   box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   font-family: "GeorgiaItalic";
-}
-input[type="checkbox"] {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.4rem;
 }
 label {
   display: block;

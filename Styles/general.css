@@ -638,12 +638,12 @@ a:visited {
   }
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar .ambassadors-search-button {
-  width: 2.1em;
+  height: 2.6em;
+  width: 2.6em;
   border: 0;
   border-radius: 0 1rem 1rem 0;
   margin-top: 0;
   background: url("../Content/Images/search.png") center;
-  box-shadow: none;
   outline: 0;
   padding: 0;
   float: left;
