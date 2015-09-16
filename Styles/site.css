@@ -1417,8 +1417,14 @@ a:visited {
   width: 100%;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar {
-  width: 100%;
-  margin: 3rem auto;
+  margin: auto -4rem;
+  width: only screen and (min-width: 42.66em);
+}
+@media only screen and (min-width: 42.66em) {
+  #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar {
+    margin: 3rem auto;
+    width: 100%;
+  }
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar .ambassadors-search-input {
   width: 85%;
@@ -1450,17 +1456,24 @@ a:visited {
   width: 100%;
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
-  width: 90%;
+  width: 38rem;
+  margin: 2.5rem -1rem;
   background: #ffffff;
   box-shadow: 0 0 1.11rem rgba(85, 85, 85, 0.5);
   border-radius: 1.66rem;
   border-top-left-radius: 0;
   display: inline-block;
-  margin: 2.5rem 2rem;
+}
+@media only screen and (min-width: 30em) {
+  #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
+    width: 90%;
+    margin: 2.5rem 2rem;
+  }
 }
 @media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
     width: 40rem;
+    margin: 2.5rem 2rem;
   }
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li .ambassador-portrait {
