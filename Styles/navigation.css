@@ -970,7 +970,7 @@ h6 {
   width: 100%;
   float: right;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation {
     position: absolute;
     top: 0;
@@ -981,7 +981,7 @@ h6 {
   margin-top: 1.5rem;
   padding-right: 0;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation {
     background: none;
     float: none;
@@ -990,7 +990,7 @@ h6 {
     height: 7.5rem;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu {
     padding-left: 31.5rem;
     width: 100%;
@@ -1003,7 +1003,7 @@ h6 {
   display: block;
   margin: 0;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li {
     padding-top: 1rem;
     vertical-align: middle;
@@ -1019,7 +1019,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
     padding: 0.5rem 2rem;
   }
@@ -1074,7 +1074,7 @@ h6 {
   float: left;
   display: inline-block;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a {
     border-radius: 1rem;
     padding: 0.5rem 2rem;
@@ -1083,7 +1083,7 @@ h6 {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:focus {
@@ -1094,7 +1094,7 @@ h6 {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a {
     padding: 0.5rem 2rem;
     text-align: center;
@@ -1103,12 +1103,12 @@ h6 {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) and only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) and only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a {
     padding: 0 2rem;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:focus {
@@ -1119,7 +1119,7 @@ h6 {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) and only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) and only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:focus {

@@ -1287,7 +1287,7 @@ body {
   color: #555555;
   font-family: "OpenSansLight";
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   body {
     background: url(../Content/Images/Background.jpg) no-repeat fixed;
     background-size: 100%;
@@ -1348,13 +1348,15 @@ a:visited {
   width: 100%;
 }
 #layout-wrapper #layout-header #header .zone-header {
+  padding-right: 0;
+  padding-left: 0;
   height: 7.5rem;
   background-image: url("../Content/Images/logo.png");
   background-repeat: no-repeat;
   background-position: center left;
   vertical-align: middle;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-header #header .zone-header {
     margin: 0 auto;
     width: 53.33em;
@@ -1370,7 +1372,7 @@ a:visited {
 #layout-wrapper #layout-main-container #layout-main #layout-content {
   padding: 0 0 1rem;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content {
     padding: 22rem 0 1rem;
   }
@@ -1390,7 +1392,7 @@ a:visited {
   height: 7.4rem;
   background: url("../Content/Images/logo-big.png") no-repeat bottom;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content {
     border-radius: 1.66rem;
     border-top-left-radius: 0;
@@ -1422,7 +1424,7 @@ a:visited {
   width: 85%;
   margin: 0 auto;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-searchbar .ambassadors-search-input {
     width: 94%;
   }
@@ -1456,7 +1458,7 @@ a:visited {
   display: inline-block;
   margin: 2.5rem 2rem;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content .ambassadors-search-result-container .ambassadors-search-result li {
     width: 40rem;
   }
@@ -2040,7 +2042,7 @@ a:visited {
   width: 100%;
   float: right;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation {
     position: absolute;
     top: 0;
@@ -2051,7 +2053,7 @@ a:visited {
   margin-top: 1.5rem;
   padding-right: 0;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation {
     background: none;
     float: none;
@@ -2060,7 +2062,7 @@ a:visited {
     height: 7.5rem;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu {
     padding-left: 31.5rem;
     width: 100%;
@@ -2073,7 +2075,7 @@ a:visited {
   display: block;
   margin: 0;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li {
     padding-top: 1rem;
     vertical-align: middle;
@@ -2089,7 +2091,7 @@ a:visited {
   text-decoration: none;
   display: inline-block;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a {
     padding: 0.5rem 2rem;
   }
@@ -2144,7 +2146,7 @@ a:visited {
   float: left;
   display: inline-block;
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a {
     border-radius: 1rem;
     padding: 0.5rem 2rem;
@@ -2153,7 +2155,7 @@ a:visited {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last a:focus {
@@ -2164,7 +2166,7 @@ a:visited {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a {
     padding: 0.5rem 2rem;
     text-align: center;
@@ -2173,12 +2175,12 @@ a:visited {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) and only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) and only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a {
     padding: 0 2rem;
   }
 }
-@media only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:focus {
@@ -2189,7 +2191,7 @@ a:visited {
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 53.33em) and only screen and (min-width: 53.33em) {
+@media only screen and (min-width: 61.11em) and only screen and (min-width: 53.33em) {
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:hover,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:active,
   #layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu .last.current a:focus {
