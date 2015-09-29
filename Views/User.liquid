@@ -1,0 +1,30 @@
+<div class="user-display">
+  <ul>
+    <li>
+      <span class="user-actions powered-by-orchard">
+        Powered by <a href="http://orchardproject.net/">Orchard</a> &copy; Lombiq.
+      </span>
+    </li>
+
+    <li>
+      {% if Model.WorkContext.CurrentUser != null %}
+      <span class="user-actions user">
+        <a href="/Users/Account/ChangePassword">{{ Model.WorkContext.CurrentUser.UserName }}</a>
+      </span>
+      <span class="user-actions logout">
+        <a href="/Users/Account/LogOff?ReturnUrl=%2FDotNestSitesThemes%2Fresources-for-orchard-ambassadors"> Sign out </a>
+      </span>
+      {% else %}
+      <span class="user-actions">
+        <a href="/Users/Account/LogOn?ReturnUrl=%2FDotNestSitesThemes%2Fresources-for-orchard-ambassadors">Sign In</a>
+      </span>
+      {% endif %}
+    </li>
+
+    <li>
+      <span class="user-actions powered-by-dotnest">
+        Powered by <a href="https://dotnest.com/">DotNest</a>, the Orchard SaaS platform fueled by <a href="http://lombiq.com/">Lombiq</a>
+      </span>
+    </li>
+  </ul>
+</div>

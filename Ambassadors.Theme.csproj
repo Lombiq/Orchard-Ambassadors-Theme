@@ -182,15 +182,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\User.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\pages.css.map">
       <DependentUpon>pages.css</DependentUpon>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Parts.MenuWidget-MenuWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.less" />
@@ -198,6 +192,16 @@
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.css.map">
       <DependentUpon>mixins.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.MenuWidget-MenuWidget.liquid">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User.liquid">
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <PropertyGroup>

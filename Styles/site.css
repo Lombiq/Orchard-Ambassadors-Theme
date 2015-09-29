@@ -1544,25 +1544,33 @@ a:visited {
   background: linear-gradient(to bottom, #303030 0, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
 }
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a {
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li {
+  display: block;
+}
+@media only screen and (min-width: 61.11em) {
+  #layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li {
+    display: inline;
+  }
+}
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li a {
   font-family: "Vani";
   color: #ffffff;
   text-decoration: none;
 }
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:hover,
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:active,
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:visited {
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li a:hover,
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li a:active,
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li a:visited {
   font-family: "Vani";
   color: #ffffff;
   text-decoration: none;
 }
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display .user-actions {
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li .user-actions {
   margin: auto 2rem;
 }
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display .powered-by-orchard {
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li .powered-by-orchard {
   margin-left: 0;
 }
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display .powered-by-dotnest {
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display ul li .powered-by-dotnest {
   margin-right: 0;
 }
 .nav {
