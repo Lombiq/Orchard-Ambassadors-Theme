@@ -98,16 +98,17 @@ a
                 }
 
                 height: 7.5rem;
-                background-image: url("../Content/Images/logo.png");
-                background-repeat: no-repeat;
-                background-position: center left;
                 vertical-align: middle;
 
                 #branding
                 {
+                    position: relative;
+
                     a
                     {
-                        display: none;
+                        position: absolute;
+                        z-index: 10;
+                        top: -0.8rem;
                     }
                 }
             }
