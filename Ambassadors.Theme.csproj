@@ -226,6 +226,9 @@
     <Content Include="Content\Fonts\Vani\Vani.ttf" />
     <Content Include="Content\Fonts\Vani\Vanib.ttf" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Resources.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
