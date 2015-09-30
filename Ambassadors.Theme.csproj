@@ -202,6 +202,30 @@
   <ItemGroup>
     <Content Include="Views\Branding.liquid" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Bold.otf" />
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-BoldItalic.otf" />
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Italic.otf" />
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Regular.otf" />
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Semibold.otf" />
+    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-SemiboldItalic.otf" />
+    <Content Include="Content\Fonts\Georgia\georgia.ttf" />
+    <Content Include="Content\Fonts\Georgia\georgiab.ttf" />
+    <Content Include="Content\Fonts\Georgia\georgiai.ttf" />
+    <Content Include="Content\Fonts\Georgia\georgiaz.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-Bold.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-BoldItalic.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBold.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-Italic.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-Light.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-LightItalic.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-Regular.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-Semibold.ttf" />
+    <Content Include="Content\Fonts\OpenSans\OpenSans-SemiboldItalic.ttf" />
+    <Content Include="Content\Fonts\Vani\Vani.ttf" />
+    <Content Include="Content\Fonts\Vani\Vanib.ttf" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
