@@ -1363,6 +1363,12 @@ a:visited {
   position: relative;
 }
 #layout-wrapper #layout-header #header .zone-header #branding a {
+  width: 28rem;
+  height: 7rem;
+  background-image: url("../Content/Images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  vertical-align: middle;
   position: absolute;
   z-index: 10;
   top: -0.8rem;
@@ -1381,7 +1387,7 @@ a:visited {
 }
 #layout-wrapper #layout-main-container #layout-main #layout-content #content .zone-content {
   position: relative;
-  padding: 0 2rem 2rem;
+  padding: 0 1rem 1rem;
   box-shadow: 0 0 1.11rem #555555;
   background-color: #ffffff;
 }
@@ -1543,21 +1549,23 @@ a:visited {
   background: linear-gradient(to bottom, #303030 0, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
 }
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer a {
+  font-family: "Vani";
+  color: #ffffff;
+  text-decoration: none;
+}
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer a:hover,
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer a:active,
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer a:visited {
+  font-family: "Vani";
+  color: #ffffff;
+  text-decoration: none;
+}
 #layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display {
   padding: 0.7rem 0 0.4rem 0;
 }
 #layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a {
-  font-family: "Vani";
-  color: #ffffff;
-  text-decoration: none;
   margin: auto 0.5rem;
-}
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:hover,
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:active,
-#layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display a:visited {
-  font-family: "Vani";
-  color: #ffffff;
-  text-decoration: none;
 }
 #layout-wrapper #layout-footer #footer #footer-sig .zone-footer .user-display .user-actions {
   margin: auto 2rem;

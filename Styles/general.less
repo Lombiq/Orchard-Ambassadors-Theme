@@ -106,6 +106,12 @@ a
 
                     a
                     {
+                        width: 28rem;
+                        height: 7rem;
+                        background-image: url("../Content/Images/logo.png");
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        vertical-align: middle;
                         position: absolute;
                         z-index: 10;
                         top: -0.8rem;
@@ -148,7 +154,7 @@ a
                             background: url("../Content/Images/logo-big.png") no-repeat bottom;
                         }
 
-                        padding: 0 2rem 2rem;
+                        padding: 0 1rem 1rem;
 
                         @media @media-lg
                         {
@@ -333,19 +339,24 @@ a
                     .ambassadors-font-vani-normal();
                     padding: 0;
 
+                    a
+                    {
+                        .ambassadors-footer-link-style();
+
+                        &:hover, &:active, &:visited
+                        {
+                            .ambassadors-footer-link-style()
+                        }
+                    }
+
+
                     .user-display
                     {
                         padding: 0.7rem 0 0.4rem 0;
 
                         a
                         {
-                            .ambassadors-footer-link-style();
                             margin: auto 0.5rem;
-
-                            &:hover, &:active, &:visited
-                            {
-                                .ambassadors-footer-link-style()
-                            }
                         }
 
                         .user-actions
