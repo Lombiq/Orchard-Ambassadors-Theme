@@ -337,54 +337,35 @@ a
                     {
                         padding: 0.7rem 0 0.4rem 0;
 
-                        ul li
+                        a
                         {
-                            display: block;
+                            .ambassadors-footer-link-style();
+                            margin: auto 0.5rem;
 
-                            @media @media-lg
+                            &:hover, &:active, &:visited
                             {
-                                display: inline;
-                            }
-
-                            a
-                            {
-                                .ambassadors-footer-link-style();
-
-                                &:hover, &:active, &:visited
-                                {
-                                    .ambassadors-footer-link-style()
-                                }
-                            }
-
-                            .user-actions
-                            {
-                                margin: auto 2rem;
-                            }
-
-                            .powered-by-orchard
-                            {
-                                margin-left: 0;
-                            }
-
-                            .powered-by-dotnest
-                            {
-                                margin-right: 0;
+                                .ambassadors-footer-link-style()
                             }
                         }
 
-                        width: 100%;
-                        text-align: center;
-                        margin: 10rem 0 0;
-                        border-top: 1px solid @ambassadors-footer-border-color;
-                        background: @ambassadors-footer-gradient-color-1;
-                        background: -moz-linear-gradient(top, @ambassadors-footer-gradient-color-1 0 @ambassadors-footer-gradient-color-2 100%);
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@ambassadors-footer-gradient-color-1), color-stop(100%,@ambassadors-footer-gradient-color-2));
-                        background: -webkit-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                        background: -o-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                        background: -ms-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                        background: linear-gradient(to bottom, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-color-1, endColorstr=@ambassadors-footer-gradient-color-2,GradientType=0 );
+                        .user-actions
+                        {
+                            margin: auto 2rem;
+                        }
                     }
+
+                    width: 100%;
+                    text-align: center;
+                    margin: 10rem 0 0;
+                    border-top: 1px solid @ambassadors-footer-border-color;
+                    background: @ambassadors-footer-gradient-color-1;
+                    background: -moz-linear-gradient(top, @ambassadors-footer-gradient-color-1 0 @ambassadors-footer-gradient-color-2 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@ambassadors-footer-gradient-color-1), color-stop(100%,@ambassadors-footer-gradient-color-2));
+                    background: -webkit-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+                    background: -o-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+                    background: -ms-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+                    background: linear-gradient(to bottom, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-color-1, endColorstr=@ambassadors-footer-gradient-color-2,GradientType=0 );
                 }
             }
         }
