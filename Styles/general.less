@@ -1,5 +1,4 @@
 ﻿@import "variables";
-@import "type";
 @import "mixins/mixins";
 
 body
@@ -35,7 +34,6 @@ body
     }
 
     color: @ambassadors-text-color;
-    .ambassadors-font-normal();
 }
 
 ol, ul
@@ -53,7 +51,6 @@ li
 a
 {
     color: @ambassadors-link-color;
-    font-family: "OpenSansLightItalic";
     text-decoration: underline;
 
     &:hover
@@ -336,7 +333,6 @@ a
                 .zone-footer
                 {
                     font-size: 0.77em;
-                    .ambassadors-font-vani-normal();
                     padding: 0;
 
                     a
@@ -345,7 +341,7 @@ a
 
                         &:hover, &:active, &:visited
                         {
-                            .ambassadors-footer-link-style()
+                            .ambassadors-footer-link-style();
                         }
                     }
 
