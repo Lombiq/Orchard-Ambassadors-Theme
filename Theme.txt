@@ -1,4 +1,4 @@
-Name: Ambassadors.Theme
+Name: OrchardAmbassadors.Theme
 Author: Lombiq
 Website: http://www.lombiq.com
 Description: Theme for Orchard Ambassadors
