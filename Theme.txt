@@ -1,7 +1,6 @@
-Name: OrchardAmbassadors.Theme
-Author: Lombiq
-Website: http://www.lombiq.com
-Description: Theme for Orchard Ambassadors
+Name: Orchard Ambassadors Theme
+Author: Lombiq Technologies Ltd.
+Website: http://ambassadors.orchardproject.net/
+Description: Theme for the Orchard Ambassadors website.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
-Dependency: Lombiq.LiquidMarkup
