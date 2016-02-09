@@ -14,7 +14,8 @@
     <AssemblyName>OrchardAmbassadors.Theme</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -66,44 +67,53 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Images\Background.jpg" />
-    <Content Include="Content\Images\location-sign.png" />
-    <Content Include="Content\Images\logo-big.png" />
-    <Content Include="Content\Images\logo.png" />
-    <Content Include="Content\Images\logo_small.png" />
-    <Content Include="Content\Images\phone-logo.png" />
-    <Content Include="Content\Images\portrait.png" />
-    <Content Include="Content\Images\search.png" />
-    <Content Include="Styles\fonts.css">
-      <DependentUpon>fonts.less</DependentUpon>
+    <Content Include="Images\Background.jpg" />
+    <Content Include="Images\location-sign.png" />
+    <Content Include="Images\logo-big.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo_small.png" />
+    <Content Include="Images\phone-logo.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Styles\ambassadors.fonts.css">
+      <DependentUpon>ambassadors.fonts.less</DependentUpon>
     </Content>
-    <Content Include="Styles\forms.css">
-      <DependentUpon>forms.less</DependentUpon>
+    <Content Include="Styles\ambassadors.forms.css">
+      <DependentUpon>ambassadors.forms.less</DependentUpon>
     </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
+    <Content Include="Styles\ambassadors.general.css">
+      <DependentUpon>ambassadors.general.less</DependentUpon>
     </Content>
-    <Content Include="Styles\mixins\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
+    <Content Include="Styles\ambassadors.Item.css">
+      <DependentUpon>ambassadors.Item.less</DependentUpon>
     </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
+    <Content Include="Styles\ambassadors.navigation.css">
+      <DependentUpon>ambassadors.navigation.less</DependentUpon>
     </Content>
-    <Content Include="Styles\pages.css">
-      <DependentUpon>pages.less</DependentUpon>
+    <Content Include="Styles\ambassadors.pages.css">
+      <DependentUpon>ambassadors.pages.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.structure.css">
+      <DependentUpon>ambassadors.structure.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.type.css">
+      <DependentUpon>ambassadors.type.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.variables.css">
+      <DependentUpon>ambassadors.variables.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\mixins\ambassadors.mixins.css">
+      <DependentUpon>ambassadors.mixins.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\mixins\ambassadors.panels.css">
+      <DependentUpon>ambassadors.panels.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
+    <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
-    <Content Include="Styles\Web.config" />
     <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
@@ -120,86 +130,6 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\pages.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site.css.map">
-      <DependentUpon>site.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\variables.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\general.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\type.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\fonts.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\fonts.css.map">
-      <DependentUpon>fonts.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\type.css.map">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\general.css.map">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\navigation.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\navigation.css.map">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\forms.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\forms.css.map">
-      <DependentUpon>forms.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\pages.css.map">
-      <DependentUpon>pages.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\mixins\mixins.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\mixins\mixins.css.map">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Parts.MenuWidget-MenuWidget.liquid">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Branding.liquid" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Bold.otf" />
@@ -226,7 +156,29 @@
     <Content Include="Content\Fonts\Vani\Vanib.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Styles\ambassadors.fonts.less" />
+    <Content Include="Styles\ambassadors.forms.less" />
+    <Content Include="Styles\ambassadors.general.less" />
+    <Content Include="Styles\ambassadors.Item.less" />
+    <Content Include="Styles\ambassadors.navigation.less" />
+    <Content Include="Styles\ambassadors.pages.less" />
+    <Content Include="Styles\ambassadors.structure.less" />
+    <Content Include="Styles\ambassadors.type.less" />
+    <Content Include="Styles\ambassadors.variables.less" />
+    <Content Include="Styles\mixins\ambassadors.mixins.less" />
+    <Content Include="Styles\mixins\ambassadors.panels.less" />
+    <Content Include="Styles\site.less" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Views\AdditionalInsertions.cshtml" />
     <Content Include="Views\AdditionalResources.cshtml" />
+    <Content Include="Views\BadgeOfHonor.liquid" />
+    <Content Include="Views\Branding.liquid" />
+    <Content Include="Views\Content-Ambassador.liquid" />
+    <Content Include="Views\Content-Ambassador.Summary.liquid" />
+    <Content Include="Views\Layout.liquida" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -262,7 +214,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45979</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>

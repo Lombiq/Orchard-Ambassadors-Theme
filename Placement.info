@@ -1,5 +1,9 @@
 <Placement>
 
   <Place Parts_Common_Metadata = "-" />
+  
+  <Match ContentType="ProjectionPage">
+      <Place Parts_Title="-"/>
+  </Match>
 
 </Placement>

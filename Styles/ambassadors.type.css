@@ -384,8 +384,21 @@ p {
 ***************************************************************/
 /* Variables
 ***************************************************************/
-/* Colors */
+/* Colors 
+***************************************************************/
+/* Menu*/
 /* Media queries */
+.Powered_by_Orchard_©_Lombiq___________Sign_In__ {
+  font-size: 14px;
+  font-family: "Vani";
+  color: #757a71;
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 301.344px;
+  top: 1274.152px;
+  z-index: 33;
+}
 /* Typography
 ***************************************************************/
 p {
@@ -397,6 +410,10 @@ h1 {
 }
 h1 small {
   font-size: 1.6em;
+}
+.zone-content > .content-item:first-of-type > header h1 {
+  padding-bottom: 4rem;
+  border-bottom: 0;
 }
 h2,
 .zone-content .projection-list h1,
@@ -416,7 +433,7 @@ h4 {
   font-size: 1em;
   font-style: normal;
   margin: 4rem auto;
-  color: #757b71;
+  color: #757a71;
 }
 h5 {
   font-size: 1.3em;
@@ -424,4 +441,3 @@ h5 {
 h6 {
   font-size: 1.1em;
 }
-/*# sourceMappingURL=type.css.map */
