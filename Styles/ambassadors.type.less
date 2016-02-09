@@ -1,5 +1,5 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
-@import "variables";
+@import "ambassadors.variables.less";
 
 /* Typography
 ***************************************************************/
@@ -14,11 +14,18 @@ p
 h1
 {
     font-size: 1.7em;
-
     small
     {
         font-size: 1.6em;
     }
+}
+
+.zone-content 
+> .content-item:first-of-type 
+> header h1
+{
+    padding-bottom: 4rem;
+    border-bottom: 0;
 }
 
 h2

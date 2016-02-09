@@ -1,0 +1,117 @@
+﻿@import "ambassadors.variables.less";
+@import "mixins/ambassadors.mixins.less";
+@import "mixins/ambassadors.panels.less";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/glyphicons";
+
+
+.zone-content ul, .zone-content ol,
+.ambassadors-phone-location
+{
+    list-style: none;
+    padding: 0;
+
+    > ul > ol
+    {
+        padding-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    > li
+    {
+        display: inline;
+        padding: 0;
+        /*margin-bottom: 1rem;*/
+    }
+}
+
+.ambassador-email
+{
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: @ambassadors-orange;
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+.ambassador-profile-picture
+{
+    float: left;
+    
+    padding: 0;
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: @ambassadors-border-bottom-radius;
+    border-top-right-radius: @ambassadors-border-bottom-radius;
+
+    
+    @media @media-md
+    {
+        border-top-right-radius: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+.ambassadors-profile
+{ 
+    .ambassadors-panel-body ();
+    padding: 0;
+
+    .col-md-6
+    {
+
+        
+        @media @media-md
+        {
+            padding: 0 1rem 0 0;
+        }
+
+    }
+}
+
+.ambassadors-detail
+{
+    margin: 1rem;
+    h2
+    {
+        a
+        {
+            color: @ambassadors-greenish-gray;
+            font-size: 20px;
+            font-family: "Georgia";
+            line-height: 1.5;
+            text-decoration:none;
+        }
+    }
+
+    p
+    {
+        margin: 2rem 0;
+    }
+
+    .ambassadors-phone-location
+    {
+        li
+        {
+          font-size: 12px;
+          font-family: "Open Sans";
+          color: @ambassadors-gray-light;
+          text-transform: uppercase;
+          line-height: 1.2;
+        }
+    }
+
+
+    .ambassador-description
+    {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: @ambassadors-gray-light;
+
+        margin-right: 3rem;
+        line-height: 1.2em;
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+}

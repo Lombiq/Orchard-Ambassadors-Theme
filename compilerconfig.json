@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFile": "Styles/site.css",
+    "inputFile": "Styles/site.less"
+  },
+  {
+    "outputFile": "Styles/general.css",
+    "inputFile": "Styles/general.less"
+  },
+  {
+    "outputFile": "Styles/mixins/ambassadors.mixins.css",
+    "inputFile": "Styles/mixins/ambassadors.mixins.less"
+  },
+  {
+    "outputFile": "Styles/ambassadors.Item.css",
+    "inputFile": "Styles/ambassadors.Item.less"
+  },
+  {
+    "outputFile": "Styles/ambassadors.variables.css",
+    "inputFile": "Styles/ambassadors.variables.less"
+  },
+  {
+    "outputFile": "Styles/mixins/ambassadors.panels.css",
+    "inputFile": "Styles/mixins/ambassadors.panels.less"
+  },
+  {
+    "outputFile": "Styles/ambassadors.site.css",
+    "inputFile": "Styles/ambassadors.site.less"
+  }
+]
