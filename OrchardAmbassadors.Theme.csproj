@@ -171,10 +171,6 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Views\AdditionalInsertions.cshtml" />
     <Content Include="Views\AdditionalResources.cshtml" />
-    <Content Include="Views\BadgeOfHonor.liquid">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\Brandinga.liquid" />
     <Content Include="Views\Content-Ambassador.liquid">
       <SubType>Designer</SubType>
     </Content>
@@ -184,6 +180,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LombiqBadgeOfHonor.liquid" />
+    <Content Include="Views\Zone-Footer.liquid" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
