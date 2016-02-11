@@ -409,19 +409,8 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
-#layout-footer #footer-sig .zone-footer {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 48em) {
-  #layout-footer #footer-sig .zone-footer {
-    width: 100%;
-  }
-}
+#layout-footer #footer-sig .zone-footer .lombiqCredits,
+#layout-footer #footer-sig .zone-footer .user-display,
 #layout-footer #footer-sig .zone-footer .credits {
   position: relative;
   float: left;
@@ -431,21 +420,10 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 48em) {
+  #layout-footer #footer-sig .zone-footer .lombiqCredits,
+  #layout-footer #footer-sig .zone-footer .user-display,
   #layout-footer #footer-sig .zone-footer .credits {
-    width: 50%;
-  }
-}
-#layout-footer #footer-sig .zone-footer .user-display {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 48em) {
-  #layout-footer #footer-sig .zone-footer .user-display {
-    width: 50%;
+    width: 33.33333333%;
   }
 }
 .zone {
