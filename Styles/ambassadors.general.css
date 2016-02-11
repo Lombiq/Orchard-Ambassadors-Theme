@@ -141,16 +141,14 @@ a:visited {
   position: relative;
   z-index: 10;
   top: -1rem;
-}
-#layout-wrapper #layout-header #header .zone-header #branding img {
-  display: initial;
+  height: 7rem;
+  padding: 2.5rem 0;
+  background: url("../Images/logo.png") no-repeat center bottom;
+  color: transparent;
 }
 @media only screen and (min-width: 61.11em) {
   #layout-wrapper #layout-header #header .zone-header #branding a {
     position: absolute;
-  }
-  #layout-wrapper #layout-header #header .zone-header #branding img {
-    display: block;
   }
 }
 #layout-wrapper #layout-main-container #layout-main {
@@ -207,6 +205,7 @@ a:visited {
 #layout-wrapper #layout-footer .zone-footer {
   width: 100%;
   text-align: center;
+  padding: 1rem 5rem;
   color: #757a71;
   border-top: 1px solid #43463c;
   background: #303030;
@@ -219,6 +218,12 @@ a:visited {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
 }
 #layout-wrapper #layout-footer .zone-footer .user-display {
+  margin: auto;
+}
+#layout-wrapper #layout-footer .zone-footer .lombiqCredits {
+  float: left;
+}
+#layout-wrapper #layout-footer .zone-footer .credits {
   float: right;
 }
 #layout-wrapper #layout-footer .zone-footer a {
