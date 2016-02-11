@@ -120,11 +120,10 @@ a
                         position: relative;
                         z-index: 10;
                         top: -1rem;
-                    }
-
-                    img
-                    {
-                        display: initial;
+                        height: 7rem;
+                        padding: 2.5rem 0;
+                        background: url("../Images/logo.png") no-repeat center bottom;
+                        color: transparent;
                     }
 
                     @media @media-lg
@@ -132,11 +131,6 @@ a
                         a
                         {
                             position: absolute;
-                        }
-
-                        img
-                        {
-                            display: block;
                         }
                     }
                 }
@@ -218,6 +212,7 @@ a
         {
             width: 100%;
             text-align: center;
+            padding: 1rem 5rem;
             color: @ambassadors-footer-color;
 
             border-top: 1px solid @ambassadors-footer-border-color;
@@ -232,8 +227,21 @@ a
 
             .user-display
             {
+                margin: auto;
+            }
+
+            
+            .lombiqCredits
+            {
+                float: left;
+            }
+
+            
+            .credits
+            {
                 float: right;
             }
+
 
             a
             {

@@ -183,16 +183,25 @@ body
 
         .zone-footer
         {
-            .make-column(@grid-columns);
             
-            .credits
+            /*.lombiqCredits
             {
-                .make-column(@grid-columns / 2);
+                .make-column(@grid-columns / 3);
             }
             
             .user-display
             {
-                .make-column(@grid-columns / 2);
+                .make-column(@grid-columns / 3);
+            }
+            
+            .credits
+            {
+                .make-column(@grid-columns / 3);
+            }*/
+
+            .user-display &, .lombiqCredits &, .credits
+            {
+                .make-column(@grid-columns / 3);
             }
         }
     }
