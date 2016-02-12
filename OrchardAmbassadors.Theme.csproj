@@ -169,7 +169,6 @@
     <Content Include="Styles\mixins\ambassadors.panels.less" />
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Views\AdditionalInsertions.cshtml" />
     <Content Include="Views\AdditionalResources.cshtml" />
     <Content Include="Views\Content-Ambassador.liquid">
       <SubType>Designer</SubType>
