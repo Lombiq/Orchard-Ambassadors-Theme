@@ -7325,6 +7325,7 @@ a:visited {
 }
 #layout-wrapper #layout-footer .zone-footer .user-display {
   margin: auto;
+  display: inline;
 }
 #layout-wrapper #layout-footer .zone-footer .lombiqCredits {
   float: left;
