@@ -217,16 +217,6 @@ a:visited {
   background: linear-gradient(to bottom, #303030 0, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
 }
-#layout-wrapper #layout-footer .zone-footer .user-display {
-  margin: auto;
-  display: inline;
-}
-#layout-wrapper #layout-footer .zone-footer .lombiqCredits {
-  float: left;
-}
-#layout-wrapper #layout-footer .zone-footer .credits {
-  float: right;
-}
 #layout-wrapper #layout-footer .zone-footer a {
   color: #ffffff;
   text-decoration: none;

@@ -7104,9 +7104,7 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
-#layout-footer #footer-sig .zone-footer .lombiqCredits,
-#layout-footer #footer-sig .zone-footer .user-display,
-#layout-footer #footer-sig .zone-footer .credits {
+#layout-footer #footer-sig .zone-footer {
   position: relative;
   float: left;
   width: 100%;
@@ -7115,11 +7113,12 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 48em) {
-  #layout-footer #footer-sig .zone-footer .lombiqCredits,
-  #layout-footer #footer-sig .zone-footer .user-display,
-  #layout-footer #footer-sig .zone-footer .credits {
-    width: 33.33333333%;
+  #layout-footer #footer-sig .zone-footer {
+    width: 100%;
   }
+}
+#layout-footer #footer-sig .zone-footer .user-display {
+  text-align: center;
 }
 .zone {
   padding: 1rem;
@@ -7322,16 +7321,6 @@ a:visited {
   background: -ms-linear-gradient(top, #303030 0, #222222 100%);
   background: linear-gradient(to bottom, #303030 0, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
-}
-#layout-wrapper #layout-footer .zone-footer .user-display {
-  margin: auto;
-  display: inline;
-}
-#layout-wrapper #layout-footer .zone-footer .lombiqCredits {
-  float: left;
-}
-#layout-wrapper #layout-footer .zone-footer .credits {
-  float: right;
 }
 #layout-wrapper #layout-footer .zone-footer a {
   color: #ffffff;
