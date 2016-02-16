@@ -75,6 +75,9 @@
     <Content Include="Styles\ambassador.css">
       <DependentUpon>ambassador.less</DependentUpon>
     </Content>
+    <Content Include="Styles\fonts.fonts.css">
+      <DependentUpon>fonts.less</DependentUpon>
+    </Content>
     <Content Include="Styles\forms.css">
       <DependentUpon>forms.less</DependentUpon>
     </Content>
@@ -173,10 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="compilerconfig.json" />
-    <Content Include="compilerconfig.json.defaults" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
