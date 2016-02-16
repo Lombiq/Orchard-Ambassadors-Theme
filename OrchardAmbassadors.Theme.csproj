@@ -67,10 +67,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Background.jpg" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Images\logo-big.png" />
     <Content Include="Images\logo.png" />
-    <Content Include="Images\logo_small.png" />
+    <Content Include="Images\navicon.png" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Styles\ambassadors.fonts.css">
       <DependentUpon>ambassadors.fonts.less</DependentUpon>
@@ -176,10 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\LombiqBadgeOfHonor.liquid" />
-    <Content Include="Views\Zone-Footer.liquid" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
