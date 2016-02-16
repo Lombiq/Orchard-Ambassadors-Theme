@@ -43,6 +43,17 @@
   background-color: #ffffff;
   border-radius: 3rem;
 }
+.ambassadors-profile-panel-body {
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1.11rem #555555;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  padding: 0;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+}
 body {
   font-size: 18px;
   background: #e9ede6;
@@ -216,16 +227,6 @@ a:visited {
   background: -ms-linear-gradient(top, #303030 0, #222222 100%);
   background: linear-gradient(to bottom, #303030 0, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#303030, endColorstr=#222222, GradientType=0);
-}
-#layout-wrapper #layout-footer .zone-footer .user-display {
-  margin: auto;
-  display: inline;
-}
-#layout-wrapper #layout-footer .zone-footer .lombiqCredits {
-  float: left;
-}
-#layout-wrapper #layout-footer .zone-footer .credits {
-  float: right;
 }
 #layout-wrapper #layout-footer .zone-footer a {
   color: #ffffff;

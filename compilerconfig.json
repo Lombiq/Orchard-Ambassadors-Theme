@@ -8,23 +8,19 @@
     "inputFile": "Styles/general.less"
   },
   {
-    "outputFile": "Styles/mixins/ambassadors.mixins.css",
-    "inputFile": "Styles/mixins/ambassadors.mixins.less"
+    "outputFile": "Styles/mixins/mixins.css",
+    "inputFile": "Styles/mixins/mixins.less"
   },
   {
-    "outputFile": "Styles/ambassadors.Item.css",
-    "inputFile": "Styles/ambassadors.Item.less"
+    "outputFile": "Styles/variables.css",
+    "inputFile": "Styles/variables.less"
   },
   {
-    "outputFile": "Styles/ambassadors.variables.css",
-    "inputFile": "Styles/ambassadors.variables.less"
+    "outputFile": "Styles/mixins/panels.css",
+    "inputFile": "Styles/mixins/panels.less"
   },
   {
-    "outputFile": "Styles/mixins/ambassadors.panels.css",
-    "inputFile": "Styles/mixins/ambassadors.panels.less"
-  },
-  {
-    "outputFile": "Styles/ambassadors.site.css",
-    "inputFile": "Styles/ambassadors.site.less"
+    "outputFile": "Styles/ambassadors.css",
+    "inputFile": "Styles/ambassadors.less"
   }
 ]

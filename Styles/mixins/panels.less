@@ -1,4 +1,4 @@
-﻿@import "../ambassadors.variables.less";
+﻿@import "../variables.less";
 
 
 .ambassadors-panel-body
@@ -10,4 +10,13 @@
     box-shadow: 0 0 1.11rem @ambassadors-gray;
     background-color: @ambassadors-content-background-color;    
     border-radius: @ambassadors-border-bottom-radius;
+}
+
+.ambassadors-profile-panel-body
+{
+    .ambassadors-panel-body ();
+    padding: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 0;    
+   
 }
