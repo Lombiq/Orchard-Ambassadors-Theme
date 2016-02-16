@@ -16,6 +16,10 @@
     "inputFile": "Styles/variables.less"
   },
   {
+    "outputFile": "Styles/fonts.css",
+    "inputFile": "Styles/fonts.less"
+  },
+  {
     "outputFile": "Styles/mixins/panels.css",
     "inputFile": "Styles/mixins/panels.less"
   },
