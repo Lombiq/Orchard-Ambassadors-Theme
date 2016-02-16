@@ -1,0 +1,50 @@
+﻿[
+  {
+    "outputFile": "Styles/site.css",
+    "inputFile": "Styles/site.less"
+  },
+  {
+    "outputFile": "Styles/variables.css",
+    "inputFile": "Styles/variables.less"
+  },
+  {
+    "outputFile": "Styles/type.css",
+    "inputFile": "Styles/type.less"
+  },
+  {
+    "outputFile": "Styles/structure.css",
+    "inputFile": "Styles/structure.less"
+  },
+  {
+    "outputFile": "Styles/pages.css",
+    "inputFile": "Styles/pages.less"
+  },
+  {
+    "outputFile": "Styles/navigation.css",
+    "inputFile": "Styles/navigation.less"
+  },
+  {
+    "outputFile": "Styles/general.css",
+    "inputFile": "Styles/general.less"
+  },
+  {
+    "outputFile": "Styles/forms.css",
+    "inputFile": "Styles/forms.less"
+  },
+  {
+    "outputFile": "Styles/fonts.css",
+    "inputFile": "Styles/fonts.less"
+  },
+  {
+    "outputFile": "Styles/ambassador.css",
+    "inputFile": "Styles/ambassador.less"
+  },
+  {
+    "outputFile": "Styles/mixins/panels.css",
+    "inputFile": "Styles/mixins/panels.less"
+  },
+  {
+    "outputFile": "Styles/mixins/mixins.css",
+    "inputFile": "Styles/mixins/mixins.less"
+  }
+]

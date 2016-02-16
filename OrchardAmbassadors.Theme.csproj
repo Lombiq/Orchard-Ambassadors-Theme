@@ -75,8 +75,8 @@
     <Content Include="Styles\ambassador.css">
       <DependentUpon>ambassador.less</DependentUpon>
     </Content>
-    <Content Include="Styles\ambassadors.fonts.css">
-      <DependentUpon>ambassadors.fonts.less</DependentUpon>
+    <Content Include="Styles\fonts.fonts.css">
+      <DependentUpon>fonts.less</DependentUpon>
     </Content>
     <Content Include="Styles\forms.css">
       <DependentUpon>forms.less</DependentUpon>
@@ -153,7 +153,7 @@
     <Content Include="Content\Fonts\Vani\Vanib.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\ambassadors.fonts.less" />
+    <Content Include="Styles\fonts.less" />
     <Content Include="Styles\forms.less" />
     <Content Include="Styles\general.less" />
     <Content Include="Styles\ambassador.less" />
