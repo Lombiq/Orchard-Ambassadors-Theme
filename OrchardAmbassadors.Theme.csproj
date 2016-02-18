@@ -72,44 +72,11 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\navicon.png" />
     <Content Include="Images\favicon.ico" />
-    <Content Include="Styles\ambassador.css">
-      <DependentUpon>ambassador.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\fonts.css">
-      <DependentUpon>fonts.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\fonts.fonts.css">
-      <DependentUpon>fonts.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\forms.css">
-      <DependentUpon>forms.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\panels.css">
-      <DependentUpon>panels.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.css">
-      <DependentUpon>pages.less</DependentUpon>
+    <Content Include="Styles\ambassadors.Item.css">
+      <DependentUpon>ambassadors.Item.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\structure.css">
-      <DependentUpon>structure.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
@@ -156,17 +123,6 @@
     <Content Include="Content\Fonts\Vani\Vanib.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\fonts.less" />
-    <Content Include="Styles\forms.less" />
-    <Content Include="Styles\general.less" />
-    <Content Include="Styles\ambassador.less" />
-    <Content Include="Styles\navigation.less" />
-    <Content Include="Styles\pages.less" />
-    <Content Include="Styles\structure.less" />
-    <Content Include="Styles\type.less" />
-    <Content Include="Styles\variables.less" />
-    <Content Include="Styles\mixins\mixins.less" />
-    <Content Include="Styles\mixins\panels.less" />
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
     <Content Include="Views\AdditionalResources.cshtml" />
@@ -179,6 +135,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Styles\ambassadors.fonts.less" />
+    <Content Include="Styles\ambassadors.forms.less" />
+    <Content Include="Styles\ambassadors.general.less" />
+    <Content Include="Styles\ambassadors.Item.less" />
+    <Content Include="Styles\ambassadors.navigation.less" />
+    <Content Include="Styles\ambassadors.pages.less" />
+    <Content Include="Styles\ambassadors.structure.less" />
+    <Content Include="Styles\ambassadors.type.less" />
+    <Content Include="Styles\ambassadors.variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\mixins\ambassadors.mixins.less" />
+    <Content Include="Styles\mixins\ambassadors.panels.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

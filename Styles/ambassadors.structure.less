@@ -183,9 +183,11 @@ body
 
         .zone-footer
         {
-            .lombiqCredits, .user-display, .credits
+            .make-column(@grid-columns);
+
+            .user-display
             {
-                .make-column(@grid-columns / 3);
+                text-align: center;
             }
         }
     }
