@@ -1,6 +1,6 @@
-﻿@import "variables.less";
-@import "mixins/mixins.less";
-@import "mixins/panels.less";
+﻿@import "ambassadors.variables.less";
+@import "mixins/ambassadors.mixins.less";
+@import "mixins/ambassadors.panels.less";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/glyphicons";
 
 
@@ -9,22 +9,6 @@
 {
     list-style: none;
     padding: 0;
-
-    ul
-    {
-        
-        @media @media-md
-        {
-            -moz-column-count: unset;
-            -webkit-column-count: unset;
-            column-count: unset;
-        }
-    }
-
-    ul > li
-    {
-        display: inline;
-    }
 
     > ul > ol
     {
@@ -36,6 +20,7 @@
     {
         display: inline;
         padding: 0;
+        /*margin-bottom: 1rem;*/
     }
 }
 
@@ -51,42 +36,43 @@
 
 .ambassador-profile-picture
 {
-    img
+    float: left;
+    
+    padding: 0;
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: @ambassadors-border-bottom-radius;
+    border-top-right-radius: @ambassadors-border-bottom-radius;
+
+    
+    @media @media-md
     {
-        display: block;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        position: relative;
-        padding-bottom: 1rem;
-        border-top-right-radius: @ambassadors-border-bottom-radius;
-
-        @media @media-md
-        { 
-            border-bottom-left-radius: @ambassadors-border-bottom-radius;
-            border-top-right-radius: 0;
-            padding-bottom: 0;
-        }
+        border-top-right-radius: 0;
+        padding-bottom: 0;
     }
-
 }
 
 
 .ambassadors-profile
-{   
-    @media @media-md
+{ 
+    .ambassadors-panel-body ();
+    padding: 0;
+
+    .col-md-6
     {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
+
+        
+        @media @media-md
+        {
+            padding: 0 1rem 0 0;
+        }
+
     }
 }
 
 .ambassadors-detail
 {
     margin: 1rem;
-    display: inline-block;
-
     h2
     {
         a
@@ -127,26 +113,5 @@
         line-height: 1.2em;
         text-align: left;
         padding-bottom: 1rem;
-    }
-}
-
-.ambassadors-projection-page
-{
-    ul
-    {
-       
-        @media @media-md
-        {
-            -moz-column-count: 2;
-            -webkit-column-count: 2;
-            column-count: 2;
-        }
-    }
-
-    ul > li
-    {
-        margin: 0;
-        padding: 1rem;
-        display: -webkit-inline-box;
     }
 }

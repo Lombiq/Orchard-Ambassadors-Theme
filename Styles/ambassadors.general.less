@@ -1,6 +1,6 @@
-﻿@import "variables.less";
-@import "mixins/mixins.less";
-@import "mixins/panels.less";
+﻿@import "ambassadors.variables.less";
+@import "mixins/ambassadors.mixins.less";
+@import "mixins/ambassadors.panels.less";
 
 
 body
@@ -224,7 +224,24 @@ a
             background: -ms-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
             background: linear-gradient(to bottom, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-color-1, endColorstr=@ambassadors-footer-gradient-color-2,GradientType=0 );
+
+            .user-display
+            {
+                margin: auto;
+                display: inline;
+            }
             
+            .lombiqCredits
+            {
+                float: left;
+            }
+
+            
+            .credits
+            {
+                float: right;
+            }
+
             a
             {
                 color: @ambassadors-footer-link-color;

@@ -409,7 +409,9 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
-#layout-footer #footer-sig .zone-footer {
+#layout-footer #footer-sig .zone-footer .lombiqCredits,
+#layout-footer #footer-sig .zone-footer .user-display,
+#layout-footer #footer-sig .zone-footer .credits {
   position: relative;
   float: left;
   width: 100%;
@@ -418,12 +420,11 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 48em) {
-  #layout-footer #footer-sig .zone-footer {
-    width: 100%;
+  #layout-footer #footer-sig .zone-footer .lombiqCredits,
+  #layout-footer #footer-sig .zone-footer .user-display,
+  #layout-footer #footer-sig .zone-footer .credits {
+    width: 33.33333333%;
   }
-}
-#layout-footer #footer-sig .zone-footer .user-display {
-  text-align: center;
 }
 .zone {
   padding: 1rem;

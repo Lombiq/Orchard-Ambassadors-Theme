@@ -75,6 +75,9 @@
     <Content Include="Styles\ambassador.css">
       <DependentUpon>ambassador.less</DependentUpon>
     </Content>
+    <Content Include="Styles\fonts.css">
+      <DependentUpon>fonts.less</DependentUpon>
+    </Content>
     <Content Include="Styles\fonts.fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
