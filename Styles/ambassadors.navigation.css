@@ -68,10 +68,10 @@
   padding-left: 3rem;
 }
 #layout-navigation .zone-navigation .menu > li > a:hover {
-  background: url("../Images/navicon.png") no-repeat center left;
+  background: url("../Images/logo_small.png") no-repeat center left;
 }
 #layout-navigation .zone-navigation .menu > li.current a {
-  background: url("../Images/navicon.png") no-repeat center left;
+  background: url("../Images/logo_small.png") no-repeat center left;
 }
 #layout-navigation .zone-navigation .menu > li.last a {
   background: none;
