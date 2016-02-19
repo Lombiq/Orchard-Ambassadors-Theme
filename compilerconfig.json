@@ -26,5 +26,45 @@
   {
     "outputFile": "Styles/ambassadors.site.css",
     "inputFile": "Styles/ambassadors.site.less"
+  },
+  {
+    "outputFile": "Styles/mixins/mixins.css",
+    "inputFile": "Styles/mixins/mixins.less"
+  },
+  {
+    "outputFile": "Styles/structure.css",
+    "inputFile": "Styles/structure.less"
+  },
+  {
+    "outputFile": "Styles/mixins/panels.css",
+    "inputFile": "Styles/mixins/panels.less"
+  },
+  {
+    "outputFile": "Styles/ambassador.css",
+    "inputFile": "Styles/ambassador.less"
+  },
+  {
+    "outputFile": "Styles/fonts.css",
+    "inputFile": "Styles/fonts.less"
+  },
+  {
+    "outputFile": "Styles/forms.css",
+    "inputFile": "Styles/forms.less"
+  },
+  {
+    "outputFile": "Styles/navigation.css",
+    "inputFile": "Styles/navigation.less"
+  },
+  {
+    "outputFile": "Styles/pages.css",
+    "inputFile": "Styles/pages.less"
+  },
+  {
+    "outputFile": "Styles/type.css",
+    "inputFile": "Styles/type.less"
+  },
+  {
+    "outputFile": "Styles/variables.css",
+    "inputFile": "Styles/variables.less"
   }
 ]

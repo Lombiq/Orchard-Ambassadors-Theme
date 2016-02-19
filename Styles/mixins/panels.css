@@ -18,19 +18,23 @@
   top: 1274.152px;
   z-index: 33;
 }
-.menu > .hover > a {
-  border-radius: 1rem;
-  background-color: #777777;
-  color: #ffffff;
-  opacity: 0.8;
-  padding: 0.5rem 2rem;
-}
-.google-maps {
+.ambassadors-panel-body {
+  padding: 4rem;
   position: relative;
-  padding-bottom: 100%;
+  margin-bottom: 5rem;
+  border-top-left-radius: 0;
+  box-shadow: 0 0 1.11rem #555555;
+  background-color: #ffffff;
+  border-radius: 3rem;
 }
-.google-maps iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.ambassadors-profile-panel-body {
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1.11rem #555555;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  padding: 0;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
 }
