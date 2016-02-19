@@ -79,11 +79,11 @@
     <Content Include="Styles\ambassador.min.css">
       <DependentUpon>ambassador.css</DependentUpon>
     </Content>
-    <Content Include="Styles\fonts.css">
-      <DependentUpon>fonts.less</DependentUpon>
+    <Content Include="Styles\ambassadors.fonts.css">
+      <DependentUpon>ambassadors.fonts.less</DependentUpon>
     </Content>
-    <Content Include="Styles\fonts.min.css">
-      <DependentUpon>fonts.css</DependentUpon>
+    <Content Include="Styles\ambassadors.fonts.min.css">
+      <DependentUpon>ambassadors.fonts.css</DependentUpon>
     </Content>
     <Content Include="Styles\forms.css">
       <DependentUpon>forms.less</DependentUpon>
@@ -210,7 +210,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\fonts.less" />
+    <Content Include="Styles\ambassadors.fonts.less" />
     <Content Include="Styles\forms.less" />
     <Content Include="Styles\general.less" />
     <Content Include="Styles\ambassador.less" />
