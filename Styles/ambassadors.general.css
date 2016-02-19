@@ -162,6 +162,10 @@ a:visited {
     position: absolute;
   }
 }
+#layout-wrapper #layout-main-container {
+  margin-left: 0;
+  margin-right: 0;
+}
 #layout-wrapper #layout-main-container #layout-main {
   max-width: 1200px;
   margin-left: auto;

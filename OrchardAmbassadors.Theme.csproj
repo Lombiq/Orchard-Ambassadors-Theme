@@ -72,8 +72,38 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\navicon.png" />
     <Content Include="Images\favicon.ico" />
+    <Content Include="Styles\ambassadors.fonts.css">
+      <DependentUpon>ambassadors.fonts.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.forms.css">
+      <DependentUpon>ambassadors.forms.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.general.css">
+      <DependentUpon>ambassadors.general.less</DependentUpon>
+    </Content>
     <Content Include="Styles\ambassadors.Item.css">
       <DependentUpon>ambassadors.Item.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.navigation.css">
+      <DependentUpon>ambassadors.navigation.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.pages.css">
+      <DependentUpon>ambassadors.pages.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.structure.css">
+      <DependentUpon>ambassadors.structure.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.type.css">
+      <DependentUpon>ambassadors.type.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\ambassadors.variables.css">
+      <DependentUpon>ambassadors.variables.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\mixins\ambassadors.mixins.css">
+      <DependentUpon>ambassadors.mixins.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\mixins\ambassadors.panels.css">
+      <DependentUpon>ambassadors.panels.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
