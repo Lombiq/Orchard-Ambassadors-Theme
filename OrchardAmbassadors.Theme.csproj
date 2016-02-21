@@ -204,10 +204,6 @@
     <Content Include="Images\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <Content Include="Styles\fonts.less" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +219,12 @@
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.less" />
     <Content Include="Styles\mixins\panels.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
