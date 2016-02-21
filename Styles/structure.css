@@ -4,6 +4,89 @@
 /* Common
    Common imports needed in every PGBBT LESS file.
 ***************************************************************/
+.clearfix:before,
+.clearfix:after,
+#layout-wrapper:before,
+#layout-wrapper:after,
+#layout-wrapper #layout-header:before,
+#layout-wrapper #layout-header:after,
+#layout-wrapper #layout-featured:before,
+#layout-wrapper #layout-featured:after,
+#layout-wrapper #layout-before-main:before,
+#layout-wrapper #layout-before-main:after,
+#layout-main-container:before,
+#layout-main-container:after,
+#layout-main-container #layout-content #messages:before,
+#layout-main-container #layout-content #messages:after,
+#layout-main-container #layout-content #before-content:before,
+#layout-main-container #layout-content #before-content:after,
+#layout-main-container #layout-content #content:before,
+#layout-main-container #layout-content #content:after,
+#layout-main-container #layout-content #after-content:before,
+#layout-main-container #layout-content #after-content:after,
+#layout-after-main:before,
+#layout-after-main:after,
+#layout-tripel-container:before,
+#layout-tripel-container:after,
+#layout-footer:before,
+#layout-footer:after,
+#layout-footer #footer-quad:before,
+#layout-footer #footer-quad:after,
+#layout-footer #footer-sig:before,
+#layout-footer #footer-sig:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+#layout-wrapper:after,
+#layout-wrapper #layout-header:after,
+#layout-wrapper #layout-featured:after,
+#layout-wrapper #layout-before-main:after,
+#layout-main-container:after,
+#layout-main-container #layout-content #messages:after,
+#layout-main-container #layout-content #before-content:after,
+#layout-main-container #layout-content #content:after,
+#layout-main-container #layout-content #after-content:after,
+#layout-after-main:after,
+#layout-tripel-container:after,
+#layout-footer:after,
+#layout-footer #footer-quad:after,
+#layout-footer #footer-sig:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
 /* Structure
    Only structure-related styles, mainly applying Bootstrap's grid system to Orchard's default markup.
 ***************************************************************/

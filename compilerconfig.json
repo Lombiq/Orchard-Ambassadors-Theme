@@ -66,5 +66,9 @@
   {
     "outputFile": "Styles/variables.css",
     "inputFile": "Styles/variables.less"
+  },
+  {
+    "outputFile": "Styles/ambassadors.fonts.css",
+    "inputFile": "Styles/ambassadors.fonts.less"
   }
 ]

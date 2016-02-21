@@ -208,9 +208,9 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Styles\fonts.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\fonts.less" />
     <Content Include="Styles\forms.less" />
     <Content Include="Styles\general.less" />
     <Content Include="Styles\ambassador.less" />
