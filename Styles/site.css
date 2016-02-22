@@ -1366,7 +1366,7 @@ body {
 body {
   font-size: 18px;
   background: #e9ede6;
-  background: url(../Images/Background.jpg) center center no-repeat;
+  background: url(../Images/background.jpg) center center no-repeat;
   background-size: cover;
   line-height: 1.6em;
   color: #555555;
