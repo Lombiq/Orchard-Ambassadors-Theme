@@ -1,11 +1,10 @@
 ﻿@import "variables";
 @import "mixins/mixins";
 @import "mixins/panels";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/glyphicons";
 
 
 .zone-content ul, .zone-content ol,
-.ambassadors-phone-location
+.ambassadors-detail .ambassadors-phone-location
 {
     list-style: none;
     padding: 0;
@@ -21,11 +20,6 @@
         }
     }
 
-    ul > li
-    {
-        display: inline;
-    }
-
     > ul > ol
     {
         padding-left: 0;
@@ -35,7 +29,7 @@
     > li
     {
         display: inline;
-        padding: 0;
+        padding: 0 1rem 0 0;
     }
 }
 
