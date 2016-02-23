@@ -7,17 +7,6 @@
 ***************************************************************/
 /* Menu*/
 /* Media queries */
-.Powered_by_Orchard_©_Lombiq___________Sign_In__ {
-  font-size: 14px;
-  font-family: "Vani";
-  color: #757a71;
-  line-height: 1.714;
-  text-align: center;
-  position: absolute;
-  left: 301.344px;
-  top: 1274.152px;
-  z-index: 33;
-}
 .menu > .hover > a {
   border-radius: 1rem;
   background-color: #777777;
@@ -56,36 +45,31 @@
 }
 .zone-content ul,
 .zone-content ol,
-.ambassadors-phone-location {
+.ambassadors-detail .ambassadors-phone-location {
   list-style: none;
   padding: 0;
 }
 @media only screen and (min-width: 53.33em) {
   .zone-content ul ul,
   .zone-content ol ul,
-  .ambassadors-phone-location ul {
+  .ambassadors-detail .ambassadors-phone-location ul {
     -moz-column-count: unset;
     -webkit-column-count: unset;
     column-count: unset;
   }
 }
-.zone-content ul ul > li,
-.zone-content ol ul > li,
-.ambassadors-phone-location ul > li {
-  display: inline;
-}
 .zone-content ul > ul > ol,
 .zone-content ol > ul > ol,
-.ambassadors-phone-location > ul > ol {
+.ambassadors-detail .ambassadors-phone-location > ul > ol {
   padding-left: 0;
   padding: 0;
   margin: 0;
 }
 .zone-content ul > li,
 .zone-content ol > li,
-.ambassadors-phone-location > li {
+.ambassadors-detail .ambassadors-phone-location > li {
   display: inline;
-  padding: 0;
+  padding: 0 1rem 0 0;
 }
 .ambassador-email {
   font-size: 14px;

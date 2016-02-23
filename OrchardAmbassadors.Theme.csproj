@@ -193,7 +193,7 @@
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
     <Content Include="Views\AdditionalResources.cshtml" />
-    <Content Include="Views\Content-Ambassador.liquid">
+    <Content Include="Views\Content-Ambassador.Detail.liquid">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Content-Ambassador.Summary.liquid">
@@ -225,6 +225,9 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Fonts\Glyphicons\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
