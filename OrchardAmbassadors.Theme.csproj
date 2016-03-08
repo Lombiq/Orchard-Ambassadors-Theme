@@ -68,7 +68,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Fonts\Glyphicons\glyphicons-halflings-regular.svg" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\logo-big.png" />
     <Content Include="Images\logo.png" />
@@ -97,6 +96,12 @@
     </Content>
     <Content Include="Styles\general.min.css">
       <DependentUpon>general.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\glyphicons.css">
+      <DependentUpon>glyphicons.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\glyphicons.min.css">
+      <DependentUpon>glyphicons.css</DependentUpon>
     </Content>
     <Content Include="Styles\mixins\mixins.css">
       <DependentUpon>mixins.less</DependentUpon>
@@ -149,7 +154,6 @@
     <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
-    <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info">
@@ -167,37 +171,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Bold.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-BoldItalic.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Italic.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Regular.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Semibold.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-SemiboldItalic.otf" />
-    <Content Include="Content\Fonts\Georgia\georgia.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiab.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiai.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiaz.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Bold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-BoldItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Italic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Light.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-LightItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Regular.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Semibold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-SemiboldItalic.ttf" />
-    <Content Include="Content\Fonts\Vani\Vani.ttf" />
-    <Content Include="Content\Fonts\Vani\Vanib.ttf" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
     <Content Include="Views\AdditionalResources.cshtml" />
-    <Content Include="Views\Content-Ambassador.Detail.liquid">
+    <Content Include="Views\Content_Detail__Ambassador.liquid">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Content-Ambassador.Summary.liquid">
+    <Content Include="Views\Content_Summary__Ambassador.liquid">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
@@ -226,10 +206,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="Content\Fonts\Glyphicons\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\Fonts\Glyphicons\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\Fonts\Glyphicons\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\Fonts\Glyphicons\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\glyphicons.less" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
