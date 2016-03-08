@@ -1,6 +1,7 @@
 ﻿@import "variables";
 @import "mixins/mixins";
 @import "mixins/panels";
+@import "fonts";
 
 
 .zone-content ul, .zone-content ol,
@@ -10,8 +11,7 @@
     padding: 0;
 
     ul
-    {
-        
+    {        
         @media @media-md
         {
             -moz-column-count: unset;
@@ -36,11 +36,12 @@
 .ambassador-email
 {
     font-size: 14px;
-    font-family: "Open Sans";
     color: @ambassadors-orange;
     font-style: italic;
     text-decoration: underline;
     line-height: 1.2;
+
+    .ambassadors-font-light-italic();
 }
 
 .ambassador-profile-picture
@@ -62,9 +63,7 @@
             padding-bottom: 0;
         }
     }
-
 }
-
 
 .ambassadors-profile
 {   
@@ -87,7 +86,6 @@
         {
             color: @ambassadors-greenish-gray;
             font-size: 20px;
-            font-family: "Georgia";
             line-height: 1.5;
             text-decoration:none;
         }
@@ -103,7 +101,6 @@
         li
         {
           font-size: 12px;
-          font-family: "Open Sans";
           color: @ambassadors-gray-light;
           text-transform: uppercase;
           line-height: 1.2;
@@ -114,7 +111,6 @@
     .ambassador-description
     {
         font-size: 14px;
-        font-family: "Open Sans";
         color: @ambassadors-gray-light;
 
         margin-right: 3rem;

@@ -1,18 +1,18 @@
 {
-  "compilers": 
-  {
-    "Less": 
+    "compilers": 
     {
-      "CompileOnBuild": false,
-      "CompileOnSave": true,
-      "EnableChainCompilation": true,
-      "GenerateSourceMaps": false,
-      "MinifyInPlace": false,
-      "OutputDirectory": "",
-      "ProcessSourceMapsForEditorEnhancements": false,
-      "ShowPreviewPane": false,
-      "StrictMath": false,
-      "AdjustRelativePaths": true
+        "Less": 
+        {
+            "CompileOnBuild": false,
+            "CompileOnSave": true,
+            "EnableChainCompilation": true,
+            "GenerateSourceMaps": false,
+            "MinifyInPlace": false,
+            "OutputDirectory": "",
+            "ProcessSourceMapsForEditorEnhancements": false,
+            "ShowPreviewPane": false,
+            "StrictMath": false,
+            "AdjustRelativePaths": true
+        }
     }
-  }
 }

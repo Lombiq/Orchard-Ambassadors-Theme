@@ -46,5 +46,9 @@
   {
     "outputFile": "Styles/site.css",
     "inputFile": "Styles/site.less"
+  },
+  {
+    "outputFile": "Styles/glyphicons.css",
+    "inputFile": "Styles/glyphicons.less"
   }
 ]
