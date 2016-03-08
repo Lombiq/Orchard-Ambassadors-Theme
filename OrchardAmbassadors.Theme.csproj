@@ -173,7 +173,6 @@
   <ItemGroup>
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Views\AdditionalResources.cshtml" />
     <Content Include="Views\Content_Detail__Ambassador.liquid">
       <SubType>Designer</SubType>
     </Content>
