@@ -897,7 +897,6 @@ a {
   font-family: "Georgia";
   font-style: normal;
   font-style: italic;
-  color: red;
 }
 .zone-content ul,
 .zone-content ol,
@@ -967,6 +966,8 @@ a {
   font-size: 20px;
   line-height: 1.5;
   text-decoration: none;
+  font-family: "Georgia";
+  font-style: normal;
 }
 .ambassadors-detail p {
   margin: 2rem 0;
