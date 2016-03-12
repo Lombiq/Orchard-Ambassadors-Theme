@@ -1,0 +1,67 @@
+﻿@import "variables";
+@import "mixins/mixins";
+
+#layout-navigation
+{
+    position: relative;
+    background-color: white;
+    width: 100%;
+
+    .zone-navigation
+    {
+        @media @media-lg
+        {
+            float: none;
+            width: @ambassadors-max-width;
+            margin: 0 auto;
+        }
+
+        .menu
+        {
+            @media @media-lg
+            {
+                padding-left: 30rem;
+                width: 100%;
+            }
+
+            > li
+            {
+                margin-left: 0;
+
+                @media @media-lg
+                {
+                    display: inline-block;
+                }
+            }
+
+            > li > a
+            {
+                border-radius: 1rem;
+                padding-right: 0.5rem;
+                color: @menu-color-active;
+                text-decoration: none;
+                padding-left: 3rem;
+
+                &:hover
+                {
+                    background: url("../Images/navicon.png") no-repeat center left;
+                }
+            }            
+
+            > li.current a
+            {
+                background: url("../Images/navicon.png") no-repeat center left;
+            }
+
+            > li.last a         
+            {            
+                background: none;    
+                background-color: @menu-bg-color-hover;
+                color: @menu-color-hover;
+                opacity: 0.8;
+                padding: 1rem;
+                margin-left: 2.5rem;
+            }
+        }
+    }
+}

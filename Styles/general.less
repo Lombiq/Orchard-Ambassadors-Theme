@@ -1,38 +1,36 @@
 ﻿@import "variables";
-@import "type";
+@import "mixins/mixins";
+@import "mixins/panels";
+
 
 body
 {
     font-size: @ambassadors-base-font-size;
-    background: @ambassadors-background-color;
-    background: url(../Content/Images/Background.jpg) no-repeat;
-    background-size: contain;
-    background-position: left top;
-    line-height: 1.5em;
-    /*background-size: 100%;*/
-    /*background
-    {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }*/
-    &:before
+    background: @ambassadors-light-grey;
+    background: url(../Images/background.jpg) center center no-repeat;
+    background-size: cover;
+    line-height: 1.6em;
+    
+
+    &::before
     {
         content: '';
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)40%, rgba(0, 0, 0, 0),#000000 60%, #000000 100%);
+        background: -moz-linear-gradient(top, @ambassadors-background-gradient-color-1 0, @ambassadors-background-gradient-color-1 45%, @ambassadors-background-gradient-color-2 65%, @ambassadors-background-gradient-color-2 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@ambassadors-background-gradient-color-1), color-stop(45%,@ambassadors-background-gradient-color-1), color-stop(65%,@ambassadors-background-gradient-color-2), color-stop(100%,@ambassadors-background-gradient-color-2));
+        background: -webkit-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
+        background: -o-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
+        background: -ms-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
+        background: linear-gradient(to bottom, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-background-gradient-color-hex1, endColorstr=@ambassadors-background-gradient-color-hex2,GradientType=0 );
         background-attachment: fixed;
-        /*background-image: linear-gradient()*/
-        opacity: 1;
     }
-    /*background: #ffffff;*/
+
     color: @ambassadors-text-color;
-    .ambassadors-font-normal();
 }
 
 ol, ul
@@ -47,11 +45,9 @@ li
     margin: 1rem 0;
 }
 
-
 a
 {
     color: @ambassadors-link-color;
-    font-family: "OpenSansLightItalic";
     text-decoration: underline;
 
     &:hover
@@ -68,117 +64,190 @@ a
 }
 
 
+#layout-main-container,
+#footer-quad
+{
+    .widget
+    {
+        .ambassadors-panel-body ();
+    }
+}
+
 #layout-wrapper
 {
-    width: 100%;
     padding: 0;
+    margin: 0;
 
     #layout-header
     {
+        margin-right: 0;
+        background: @ambassadors-header-background-color;
+        box-shadow: 0 0 1.11rem @ambassadors-black;
+        margin: 0;
+        width: 100%;
+        float: right;
+
+        @media @media-lg
+        {
+            position: relative;
+        }
+
         #header
         {
-            background: @ambassadors-header-background-color;
-            box-shadow: 0px 0px 20px #000000;
+            width: 100%;
 
             .zone-header
             {
+                padding-right: 0;
+                padding-left: 0;
+                vertical-align: middle;
+
+                @media @media-lg
+                {
+                    margin: 0 auto;
+                    width: @ambassadors-max-width;
+                }
 
                 #branding
                 {
-                }
-            }
-        }
-    }
+                    position: relative;
+                    margin: 1rem;
 
-    #layout-main-container
-    {
-        /*margin-left: 0;
-        margin-right: 0;*/
-        #layout-main
-        {
-            #layout-content
-            {
-                padding: 0;
-
-                #content
-                {
-
-
-                    .zone-content
+                    a
                     {
-                        /*align*/
-                        background-color: @ambassadors-content-background-color;
-                        box-shadow: 0px 0px 20px #555555;
-                        border-radius: 30px;
-                        border-top-left-radius: 0px;
-                        padding: 0 5rem 5rem;
-                        /*width: @screen-md-min;*/
-                        @media @media-md
-                        {
-                            margin: 0 auto;
-                            width: @screen-md-min;
-                        }
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        vertical-align: middle;
+                        position: relative;
+                        z-index: 10;
+                        top: -1rem;
+                        height: 7rem;
+                        padding: 2.5rem 0;
+                        left: -1rem;
+                        white-space: nowrap;
+                        background: url("../Images/logo.png") no-repeat center bottom;
+                        color: transparent;
+                    }
 
-                        header h1
+                    @media @media-lg
+                    {
+                        a
                         {
-                            border: 0;
-                            margin: 0;
-                            padding-top: 5rem;
-                        }
-
-                        p
-                        {
-                            font-family: Georgia;
-                            margin: 4rem 0;
+                            position: absolute;
+                            left: 0;
                         }
                     }
                 }
             }
         }
     }
+
+
+    #layout-main-container
+    {
+            margin-left: 0;
+            margin-right: 0;
+        #layout-main
+        {
+            max-width: @ambassadors-max-width;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5rem 0 1rem;
+            
+            @media @media-lg
+            {
+                padding: 36rem 0 1rem;
+            }
+
+            #layout-content
+            {
+                .ambassadors-panel-body ();
+
+                &::after
+                {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    height: 7.4rem;
+                    background: url("../Images/logo-big.png") no-repeat center bottom;
+                }
+
+                .zone-content
+                {
+
+                    .ambassadors-searchbar
+                    {
+                        padding: 3rem 1rem;
+                        display: flex;
+
+                        .ambassadors-search-button
+                        {
+                            height: 2.6em;
+                            border: 0;
+                            border-radius: 0 1rem 1rem 0;
+                            margin-top: 0;
+                            background-color: @ambassadors-orange;
+                            color: @ambassadors-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     #layout-footer
     {
         #footer
         {
-            #footer-sig
+            padding-top: 10rem;
+
+            #footer-quad
             {
-                .zone-footer
-                {
-
-                    a
-                    {
-                        color: @ambassadors-footer-link-color;
-                        font-family: "OpenSansLightItalic";
-                        text-decoration: none;
-
-                        &:hover
-                        {
-                            color: @ambassadors-footer-link-color;
-                            text-decoration: none;
-                        }
-
-                        &:active, &:visited
-                        {
-                            color: @ambassadors-footer-link-color;
-                            text-decoration: none;
-                        }
-                    }
-                    /*background: @ambassadors-heading-color;*/
-                    width: 100%;
-                    text-align: center;
-                    margin: 10rem 0 0;
-                    border-top: 1px solid @ambassadors-footer-border-color;
-                    background: #303030; /* Old browsers */
-                    background: -moz-linear-gradient(top, #303030 0 #222222 100%); /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#303030), color-stop(100%,#222222)); /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(top, #303030 0,#222222 100%); /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(top, #303030 0,#222222 100%); /* Opera 11.10+ */
-                    background: -ms-linear-gradient(top, #303030 0,#222222 100%); /* IE10+ */
-                    background: linear-gradient(to bottom, #303030 0,#222222 100%); /* W3C */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
-                }
+                margin: 0;
             }
+
+            @media @media-lg
+            {
+                position: relative;
+                margin-left: 0;
+            }
+        }
+
+        .zone-footer
+        {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 5rem;
+            color: @ambassadors-footer-color;
+
+            border-top: 1px solid @ambassadors-footer-border-color;
+            background: @ambassadors-footer-gradient-color-1;
+            background: -moz-linear-gradient(top, @ambassadors-footer-gradient-color-1 0 @ambassadors-footer-gradient-color-2 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@ambassadors-footer-gradient-color-1), color-stop(100%,@ambassadors-footer-gradient-color-2));
+            background: -webkit-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+            background: -o-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+            background: -ms-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+            background: linear-gradient(to bottom, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-color-1, endColorstr=@ambassadors-footer-gradient-color-2,GradientType=0 );
+            
+            a
+            {
+                color: @ambassadors-footer-link-color;
+                text-decoration: none;
+            }
+
+            .user-display
+            {
+                margin: auto;
+                display: inline;
+            }
+            .credits
+            {
+                float: right;
+            }
+
         }
     }
 }

@@ -7,6 +7,42 @@
 ***************************************************************/
 /* Menu*/
 /* Media queries */
+.menu > .hover > a {
+  border-radius: 1rem;
+  background-color: #777777;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 0.5rem 2rem;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 100%;
+}
+.google-maps iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.ambassadors-panel-body {
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 5rem;
+  border-top-left-radius: 0;
+  box-shadow: 0 0 1.11rem #555555;
+  background-color: #ffffff;
+  border-radius: 3rem;
+}
+.ambassadors-profile-panel-body {
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1.11rem #555555;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  padding: 0;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+}
 .glyphicon {
   position: relative;
   top: 1px;
@@ -861,4 +897,104 @@ a {
   font-family: "Georgia";
   font-style: normal;
   font-style: italic;
+}
+.zone-content ul,
+.zone-content ol,
+.ambassadors-detail .ambassadors-phone-location {
+  list-style: none;
+  padding: 0;
+}
+@media only screen and (min-width: 53.33em) {
+  .zone-content ul ul,
+  .zone-content ol ul,
+  .ambassadors-detail .ambassadors-phone-location ul {
+    -moz-column-count: unset;
+    -webkit-column-count: unset;
+    column-count: unset;
+  }
+}
+.zone-content ul > ul > ol,
+.zone-content ol > ul > ol,
+.ambassadors-detail .ambassadors-phone-location > ul > ol {
+  padding-left: 0;
+  padding: 0;
+  margin: 0;
+}
+.zone-content ul > li,
+.zone-content ol > li,
+.ambassadors-detail .ambassadors-phone-location > li {
+  display: inline;
+  padding: 0 1rem 0 0;
+}
+.ambassador-email {
+  font-size: 14px;
+  color: #ff7733;
+  text-decoration: underline;
+  line-height: 1.2;
+  font-family: "Open Sans Light";
+  font-style: italic;
+}
+.ambassador-profile-picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  position: relative;
+  padding-bottom: 1rem;
+  border-top-right-radius: 3rem;
+}
+@media only screen and (min-width: 53.33em) {
+  .ambassador-profile-picture img {
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 0;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 53.33em) {
+  .ambassadors-profile {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+.ambassadors-detail {
+  margin: 1rem;
+  display: inline-block;
+}
+.ambassadors-detail h2 a {
+  color: #757a71;
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-family: "Georgia";
+  font-style: normal;
+}
+.ambassadors-detail p {
+  margin: 2rem 0;
+}
+.ambassadors-detail .ambassadors-phone-location li {
+  font-size: 12px;
+  color: #777777;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.ambassadors-detail .ambassador-description {
+  font-size: 14px;
+  color: #777777;
+  margin-right: 3rem;
+  line-height: 1.2em;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 53.33em) {
+  .ambassadors-projection-page ul {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+.ambassadors-projection-page ul > li {
+  margin: 0;
+  padding: 1rem;
+  display: -webkit-inline-box;
 }

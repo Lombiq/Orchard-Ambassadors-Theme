@@ -3,28 +3,79 @@
 /* Variables
 ***************************************************************/
 
-/* Colors */
+@ambassadors-max-width: 1200px;
+@ambassadors-border-bottom-radius: 3rem;
+@ambassadors-base-font-size: 18px;
 
-@ambassadors-background-color: #000000;
-@ambassadors-heading-color: #555555;
-@ambassadors-text-color: #555555;
-@ambassadors-link-color: #ff7733;
-@ambassadors-content-background-color: #ffffff;
-@ambassadors-header-background-color: #ffffff;
-@ambassadors-footer-link-color: #ffffff;
-@ambassadors-footer-border-color: #43463c;
 
+/* Colors 
+***************************************************************/
+@ambassadors-gray: #555555;
+@ambassadors-gray-light: #777777;
+@ambassadors-white: #ffffff;
+@ambassadors-orange: #ff7733;
+@ambassadors-greenish-gray: #757a71;
+
+@ambassadors-black: #000000;
+@ambassadors-smoke-white: #f9f9f9;
+@ambassadors-light-grey: #e9ede6;
+@ambassadors-darker-grey: #43463c;
+@ambassadors-dark-grey: #191919;
+
+
+/* Menu*/
+@menu-color-active: @ambassadors-gray;
+
+@menu-bg-color-hover: @ambassadors-gray-light;
+@menu-color-hover: @ambassadors-white;
+
+
+@ambassadors-background-color: @ambassadors-gray;
+@ambassadors-heading-color: @ambassadors-gray;
+@ambassadors-text-color: @ambassadors-gray;
+@ambassadors-link-color: @ambassadors-orange;
+@ambassadors-content-background-color: @ambassadors-white;
+@ambassadors-header-background-color: @ambassadors-white;
+@ambassadors-footer-link-color: @ambassadors-white;
+@ambassadors-footer-color: @ambassadors-greenish-gray;
+@ambassadors-footer-border-color: @ambassadors-darker-grey;
+@ambassadors-navigation-apply-background-color: @ambassadors-gray;
+@ambassadors-navigation-apply-text-color: @ambassadors-white;
+@ambassadors-input-background-color: @ambassadors-smoke-white;
+@ambassadors-submit-button-background-color: @ambassadors-orange;
+@ambassadors-background-gradient-color: @ambassadors-dark-grey;
+@ambassadors-details-name-color: @ambassadors-greenish-gray;
+@ambassadors-sub-heading-color: @ambassadors-greenish-gray;
+
+@ambassadors-background-gradient-color-1: rgba(25, 25, 25, 0);
+@ambassadors-background-gradient-color-2: rgba(25, 25, 25, 1);
+@ambassadors-background-gradient-color-hex1: #00191919;
+@ambassadors-background-gradient-color-hex2: #191919;
+
+@ambassadors-footer-gradient-color-1: #303030;
+@ambassadors-footer-gradient-color-2: #222222;
 
 /* Media queries */
-@screen-sm-min: 47.95em; // ~768px
-@screen-md-min: 57.8em; // ~940px in Chrome, more in FF...
-@screen-lg-min: 68.6em; // ~1100px
-@screen-xl-min: 87.4em; // ~1400px
-@screen-xxl-min: 99.9em; // ~1600px
+@screen-xsm-min: 30em;
+@screen-sm-min: 42.66em; // ~768px
+@screen-md-min: 53.33em; // ~960px in Chrome, more in FF...
+@screen-lg-min: 61.11em; // ~1100px
+@screen-xl-min: 77.77em; // ~1400px
+@screen-xxl-min: 88.88.9em; // ~1600px
 
 // The tilde is needed so the quotes won't be printed
+@media-xsm: ~"only screen and (min-width: @{screen-xsm-min})";
 @media-sm: ~"only screen and (min-width: @{screen-sm-min})";
 @media-md: ~"only screen and (min-width: @{screen-md-min})";
 @media-lg: ~"only screen and (min-width: @{screen-lg-min})";
 @media-xl: ~"only screen and (min-width: @{screen-xl-min})";
 @media-xxl: ~"only screen and (min-width: @{screen-xxl-min})";
+
+
+//
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "/../../Content/Fonts/Glyphicons/";

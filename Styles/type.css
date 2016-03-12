@@ -140,7 +140,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 47.95em) {
+@media (min-width: 42.66em) {
   .lead {
     font-size: 21px;
   }
@@ -379,98 +379,94 @@ address {
 p {
   text-align: justify;
 }
-/* Fonts
-***************************************************************/
-@font-face {
-  font-family: OpenSansLight;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Light.ttf);
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  content: " ";
+  display: table;
 }
-@font-face {
-  font-family: OpenSansBold;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Bold.ttf);
+.clearfix:after,
+.dl-horizontal dd:after {
+  clear: both;
 }
-@font-face {
-  font-family: OpenSansExtraBold;
-  src: url(../Content/Fonts/OpenSans/OpenSans-ExtraBold.ttf);
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-@font-face {
-  font-family: OpenSansItalic;
-  src: url(../Content/Fonts/OpenSans/OpenSans-Italic.ttf);
+.pull-right {
+  float: right !important;
 }
-@font-face {
-  font-family: OpenSansLightItalic;
-  src: url(../Content/Fonts/OpenSans/OpenSans-LightItalic.ttf);
+.pull-left {
+  float: left !important;
 }
-@font-face {
-  font-family: GeorgiaNormal;
-  src: url(../Content/Fonts/Georgia/georgia.ttf);
+.hide {
+  display: none !important;
 }
-@font-face {
-  font-family: GeorgiaBold;
-  src: url(../Content/Fonts/Georgia/georgiab.ttf);
+.show {
+  display: block !important;
 }
-@font-face {
-  font-family: GeorgiaItalic;
-  src: url(../Content/Fonts/Georgia/georgiai.ttf);
+.invisible {
+  visibility: hidden;
 }
-@font-face {
-  font-family: GeorgiaBoldItalic;
-  src: url(../Content/Fonts/Georgia/georgiaz.ttf);
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
 }
 /* Breadcrumbs
    Some LESS variables that you can configure from your derived theme.
 ***************************************************************/
 /* Variables
 ***************************************************************/
-/* Colors */
+/* Colors 
+***************************************************************/
+/* Menu*/
 /* Media queries */
 /* Typography
 ***************************************************************/
-/* Variables */
-/* General */
-body {
-  font-family: "OpenSansLight";
-}
 p {
   text-align: justify;
 }
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.zone-content .projection-list h1,
-.zone-content .content-items h1,
-.widget h1,
-.widget .projection-list h1,
-.widget .content-items h1 {
-  font-family: "GeorgiaNormal";
-  color: #555555;
-}
 h1 {
-  font-size: 2.3em;
+  font-size: 1.7em;
 }
 h1 small {
-  font-size: 2em;
+  font-size: 1.6em;
+}
+.zone-content > .content-item:first-of-type > header h1 {
+  padding-bottom: 4rem;
+  border-bottom: 0;
 }
 h2,
 .zone-content .projection-list h1,
 .zone-content .content-items h1,
 .widget h1 {
-  font-size: 1.9em;
+  font-size: 1.4em;
 }
 h2 small {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 h3,
 .widget .projection-list h1,
 .widget .content-items h1 {
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-style: normal;
+  margin: 4rem auto;
+  color: #757a71;
 }
 h5 {
   font-size: 1.3em;
@@ -478,4 +474,3 @@ h5 {
 h6 {
   font-size: 1.1em;
 }
-/*# sourceMappingURL=type.css.map */

@@ -1,0 +1,144 @@
+﻿@import "variables";
+@import "mixins/mixins";
+@import "mixins/panels";
+@import "fonts";
+
+
+.zone-content ul, .zone-content ol,
+.ambassadors-detail .ambassadors-phone-location
+{
+    list-style: none;
+    padding: 0;
+
+    ul
+    {        
+        @media @media-md
+        {
+            -moz-column-count: unset;
+            -webkit-column-count: unset;
+            column-count: unset;
+        }
+    }
+
+    > ul > ol
+    {
+        padding-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    > li
+    {
+        display: inline;
+        padding: 0 1rem 0 0;
+    }
+}
+
+.ambassador-email
+{
+    font-size: 14px;
+    color: @ambassadors-orange;
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 1.2;
+
+    .ambassadors-font-light-italic();
+}
+
+.ambassador-profile-picture
+{
+    img
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        position: relative;
+        padding-bottom: 1rem;
+        border-top-right-radius: @ambassadors-border-bottom-radius;
+
+        @media @media-md
+        { 
+            border-bottom-left-radius: @ambassadors-border-bottom-radius;
+            border-top-right-radius: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.ambassadors-profile
+{   
+    @media @media-md
+    {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+.ambassadors-detail
+{
+    margin: 1rem;
+    display: inline-block;
+
+    h2
+    {
+        a
+        {
+            color: @ambassadors-greenish-gray;
+            font-size: 20px;
+            line-height: 1.5;
+            text-decoration:none;
+
+            .ambassadors-font-georgia();
+        }
+    }
+
+    p
+    {
+        margin: 2rem 0;
+    }
+
+    .ambassadors-phone-location
+    {
+        li
+        {
+          font-size: 12px;
+          color: @ambassadors-gray-light;
+          text-transform: uppercase;
+          line-height: 1.2;
+        }
+    }
+
+
+    .ambassador-description
+    {
+        font-size: 14px;
+        color: @ambassadors-gray-light;
+
+        margin-right: 3rem;
+        line-height: 1.2em;
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+}
+
+.ambassadors-projection-page
+{
+    ul
+    {
+       
+        @media @media-md
+        {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+    }
+
+    ul > li
+    {
+        margin: 0;
+        padding: 1rem;
+        display: -webkit-inline-box;
+    }
+}
