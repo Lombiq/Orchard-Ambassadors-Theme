@@ -838,6 +838,15 @@ body h6 {
   font-family: "Georgia";
   font-style: normal;
 }
+body h1 > a,
+body h2 > a,
+body h3 > a,
+body h4 > a,
+body h5 > a,
+body h6 > a {
+  font-family: "Georgia";
+  font-style: normal;
+}
 a {
   font-family: "Open Sans Light";
   font-style: italic;
