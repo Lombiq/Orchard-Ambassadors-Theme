@@ -206,6 +206,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Styles\glyphicons.less" />
+    <Content Include="Views\AdditionalResources.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
