@@ -1,0 +1,119 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
+@import "mixins/media";
+@import "variables";
+
+#layout-wrapper
+{
+    #layout-navigation
+    {
+        width: 100%;
+
+        .zone-navigation
+        {
+            background-color: @ambassadors-header-bg-color;
+            float: unset;
+            width: 100%;
+
+            @media @media-sm
+            {
+                min-height: 7rem;
+            }
+
+            .widget-menu-widget
+            {
+                .ambassadors-content-center();
+                width: 100% !important;
+                background-color: @ambassadors-header-bg-color;
+
+                nav
+                {
+                    padding-top: 7rem;
+
+                    @media @media-md
+                    {
+                        padding-top: 0;
+                        padding-left: 18rem;
+                    }
+
+                    @media @media-lg
+                    {
+                        padding-left: 0;
+                        float: right;
+                    }
+                }
+
+                .menu
+                {
+                    background-color: @ambassadors-menu-bg-color;
+
+                    > li
+                    {
+                        width: auto;
+                        margin-left: 0;
+
+                        a
+                        {
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                            text-decoration: none;
+                            border-radius: 0;
+                            border: none;
+                            margin-left: 0.2rem;
+                            padding-left: 4rem;
+
+                            &:hover
+                            {
+                                background-color: @ambassadors-menu-bg-color;
+                                color: @ambassadors-menu-color;
+                                background: url("../Images/navicon.png") no-repeat center left;
+                                background-position: 1.3rem;
+                            }
+                        }
+
+                        p > a
+                        {
+                            padding-top: 0.2rem;
+                            padding-bottom: 0.2rem;
+                        }
+                    }
+
+                    > li.current a
+                    {
+                        background-color: @ambassadors-menu-bg-color;
+                        color: @ambassadors-menu-color;
+                        border: none;
+                        background: url("../Images/navicon.png") no-repeat center left;
+                        background-position: 1.3rem;
+
+                        &:hover
+                        {
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                        }
+                    }
+
+                    > li.last
+                    {
+                        a
+                        {
+                            background: none;
+                            background-color: @ambassadors-menu-bg-hover-color;
+                            color: @ambassadors-menu-hover-color;
+                            opacity: 0.8;
+                            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                            margin-left: 4rem;
+                            border-radius: 1rem;
+
+                            &:hover
+                            {
+                                background: none;
+                                background-color: @ambassadors-menu-bg-hover-color;
+                                color: @ambassadors-menu-hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

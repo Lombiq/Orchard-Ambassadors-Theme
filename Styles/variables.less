@@ -1,28 +1,86 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/variables";
 
-/* Variables
-***************************************************************/
+/* _variables */
+@ambassadors-base-font-size: 18px;
+
 
 /* Colors */
+@ambassadors-black-light-color: #191919;
+@ambassadors-gray-color: #555555;
+@ambassadors-gray-darker-color: #43463c;
+@ambassadors-gray-dark-color: #303030;
+@ambassadors-gray-light-color: #777777;
+@ambassadors-greenish-gray-color: #757a71;
 
-@ambassadors-background-color: #000000;
-@ambassadors-heading-color: #555555;
-@ambassadors-text-color: #555555;
-@ambassadors-link-color: #ff7733;
-@ambassadors-content-background-color: #ffffff;
-@ambassadors-header-background-color: #ffffff;
-@ambassadors-footer-link-color: #ffffff;
-@ambassadors-footer-border-color: #43463c;
+@ambassadors-white-color: #ffffff;
+@ambassadors-smoke-white-color: #f9f9f9;
+
+@ambassadors-orange-color: #ff7733;
+
+
+
+
+@ambassadors-text-color: @ambassadors-gray-color;
+@ambassadors-bg-color: @ambassadors-black-light-color;
+
+/* Footer */
+@ambassadors-footer-link-color: @ambassadors-white-color;
+@ambassadors-footer-gradient-start-color: @ambassadors-gray-dark-color;
+@ambassadors-footer-gradient-end-color: @ambassadors-gray-darker-color;
+@ambassadors-footer-color: @ambassadors-greenish-gray-color;
+@ambassadors-footer-border-color: @ambassadors-gray-darker-color;
+
+
+/* Colours for Ambassador types */
+@ambassadors-email-color: @ambassadors-orange-color;
+@ambassadors-description-color: @ambassadors-gray-light-color;
+@ambassadors-name-color: @ambassadors-greenish-gray-color;
+@ambassadors-phone-color: @ambassadors-gray-light-color;
+
+@ambassadors-input-background-color: @ambassadors-smoke-white-color;
+
+@ambassadors-panel-boy-shadow-color: @ambassadors-gray-color;
+@ambassadors-panel-content-background-color: @ambassadors-white-color;
+
+
+/* Header */
+@ambassadors-header-bg-color: @ambassadors-white-color;
+@ambassadors-sub-heading-color: @ambassadors-greenish-gray-color;
+
+/* Navigation vars */
+@ambassadors-menu-color: @ambassadors-gray-color;
+@ambassadors-menu-bg-color: @ambassadors-white-color;
+
+@ambassadors-menu-bg-hover-color: @ambassadors-gray-light-color;
+@ambassadors-menu-hover-color: @ambassadors-white-color;
+@ambassadors-link-color: @ambassadors-orange-color;
+
+
+
+
+@spring-green: #33cc33;
+@spring-brown: #fff;
+@spring-white: #ff0000;
+@link-green: #22bb22;
+@link-dark-green: #11aa11;
+
+
+/* General */
+/*@menu-height: 4rem;*/
+@ambassadors-max-width: 1200px;
 
 
 /* Media queries */
-@screen-sm-min: 47.95em; // ~768px
-@screen-md-min: 57.8em; // ~940px in Chrome, more in FF...
-@screen-lg-min: 68.6em; // ~1100px
-@screen-xl-min: 87.4em; // ~1400px
-@screen-xxl-min: 99.9em; // ~1600px
+@screen-sm-min: 48em;
+@screen-xsm-min: 30em;
+@screen-sm-min: 42.66em; // ~768px
+@screen-md-min: 53.33em; // ~960px in Chrome, more in FF...
+@screen-lg-min: 61.11em; // ~1100px
+@screen-xl-min: 77.77em; // ~1400px
+@screen-xxl-min: 88.88.9em; // ~1600px
 
 // The tilde is needed so the quotes won't be printed
+@media-xs: ~"only screen and (min-width: @{screen-xs-min})";
 @media-sm: ~"only screen and (min-width: @{screen-sm-min})";
 @media-md: ~"only screen and (min-width: @{screen-md-min})";
 @media-lg: ~"only screen and (min-width: @{screen-lg-min})";

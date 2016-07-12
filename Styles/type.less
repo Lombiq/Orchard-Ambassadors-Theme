@@ -1,89 +1,56 @@
-﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
-@import "fonts";
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/utilities.less";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
 @import "variables";
 
 /* Typography
 ***************************************************************/
-
-/* Variables */
-@ambassadors-base-font-size: 18px;
-
-/* General */
-.ambassadors-font-normal()
-{
-    font-family: "OpenSansLight";
-}
-
-.ambassadors-font-bold()
-{
-    font-family: "OpenSansBold";
-}
-
-.ambassadors-font-extrabold()
-{
-    font-family: "OpenSansBold";
-}
-
-.ambassadors-font-italic()
-{
-    font-family: "OpenSansItalic";
-}
-
-.ambassadors-font-light-italic()
-{
-    font-family: "OpenSansLightItalic";
-}
-
-.ambassadors-font-heading()
-{
-    font-family: "GeorgiaNormal";
-    color: @ambassadors-heading-color;
-}
-
-body
-{
-    .ambassadors-font-normal;
-}
 
 p
 {
     text-align: justify;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6
-{
-    .ambassadors-font-heading();
-}
 
+/* Headings */
 h1
 {
-    font-size: 2.3em;
-
+    font-size: 1.7em;
     small
     {
-        font-size: 2em;
+        font-size: 1.6em;
     }
+}
+
+.zone-content 
+> .content-item:first-of-type 
+> header h1
+{
+    padding-bottom: 2rem;
+    border-bottom: 0;
+    font-size: 2.6em;
 }
 
 h2
 {
-    font-size: 1.9em;
+    font-size: 1.4em;
 
     small
     {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 }
 
 h3
 {
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 h4
 {
-    font-size: 1.5em;
+    font-size: 1em;
+    font-style: normal;
+    margin: 4rem auto;
+    color: @ambassadors-sub-heading-color;
 }
 
 h5
