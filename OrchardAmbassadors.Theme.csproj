@@ -135,7 +135,7 @@
     <Content Include="Styles\navigation.less" />
     <Content Include="Styles\variables.less" />
     <Content Include="Styles\mixins\media.less" />
-    <Content Include="Views\Parts.Title-66.liquid" />
+    <Content Include="Views\Parts.Title-1459.liquid" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
