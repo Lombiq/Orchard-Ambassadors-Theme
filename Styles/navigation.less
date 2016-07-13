@@ -1,66 +1,118 @@
-﻿@import "variables";
-@import "mixins/mixins";
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
+@import "mixins/media";
+@import "variables";
 
-#layout-navigation
+#layout-wrapper
 {
-    position: relative;
-    background-color: white;
-    width: 100%;
-
-    .zone-navigation
+    #layout-navigation
     {
-        @media @media-lg
+        width: 100%;
+
+        .zone-navigation
         {
-            float: none;
-            width: @ambassadors-max-width;
-            margin: 0 auto;
-        }
+            background-color: @ambassadors-header-bg-color;
+            float: unset;
+            width: 100%;
 
-        .menu
-        {
-            @media @media-lg
+            @media @media-sm
             {
-                padding-left: 30rem;
-                width: 100%;
+                min-height: 7rem;
             }
 
-            > li
+            .widget-menu-widget
             {
-                margin-left: 0;
+                .ambassadors-content-center();
+                width: 100% !important;
+                background-color: @ambassadors-header-bg-color;
 
-                @media @media-lg
+                nav
                 {
-                    display: inline-block;
+                    padding-top: 7rem;
+
+                    @media @media-md
+                    {
+                        padding-top: 0;
+                        padding-left: 18rem;
+                    }
+
+                    @media @media-lg
+                    {
+                        padding-left: 0;
+                        float: right;
+                    }
                 }
-            }
 
-            > li > a
-            {
-                border-radius: 1rem;
-                padding-right: 0.5rem;
-                color: @menu-color-active;
-                text-decoration: none;
-                padding-left: 3rem;
-
-                &:hover
+                .menu
                 {
-                    background: url("../Images/navicon.png") no-repeat center left;
+                    background-color: @ambassadors-menu-bg-color;
+
+                    > li
+                    {
+                        width: auto;
+                        margin-left: 0;
+
+                        a
+                        {
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                            text-decoration: none;
+                            border-radius: 0;
+                            border: none;
+                            margin-left: 0.2rem;
+                            padding-left: 4rem;
+
+                            &:hover
+                            {
+                                background-color: @ambassadors-menu-bg-color;
+                                color: @ambassadors-menu-color;
+                                background: url("../Images/navicon.png") no-repeat center left;
+                                background-position: 1.3rem;
+                            }
+                        }
+
+                        p > a
+                        {
+                            padding-top: 0.2rem;
+                            padding-bottom: 0.2rem;
+                        }
+                    }
+
+                    > li.current a
+                    {
+                        background-color: @ambassadors-menu-bg-color;
+                        color: @ambassadors-menu-color;
+                        border: none;
+                        background: url("../Images/navicon.png") no-repeat center left;
+                        background-position: 1.3rem;
+
+                        &:hover
+                        {
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                        }
+                    }
+
+                    > li.last
+                    {
+                        a
+                        {
+                            background: none;
+                            background-color: @ambassadors-menu-bg-hover-color;
+                            color: @ambassadors-menu-hover-color;
+                            opacity: 0.8;
+                            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                            margin-left: 4rem;
+                            border-radius: 1rem;
+
+                            &:hover
+                            {
+                                background: none;
+                                background-color: @ambassadors-menu-bg-hover-color;
+                                color: @ambassadors-menu-hover-color;
+                            }
+                        }
+                    }
                 }
-            }            
-
-            > li.current a
-            {
-                background: url("../Images/navicon.png") no-repeat center left;
-            }
-
-            > li.last a         
-            {            
-                background: none;    
-                background-color: @menu-bg-color-hover;
-                color: @menu-color-hover;
-                opacity: 0.8;
-                padding: 1rem;
-                margin-left: 2.5rem;
             }
         }
     }

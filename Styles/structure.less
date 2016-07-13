@@ -1,6 +1,5 @@
-﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/common";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/utilities.less";
-
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/utilities.less";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/common";
 
 /* Structure
    Only structure-related styles, mainly applying Bootstrap's grid system to Orchard's default markup.
@@ -20,22 +19,22 @@ body
 {
     // The layout styles are separated so it's clearer how the rows and columns are wrapped.
     .container-fixed();
+    .make-row();
 
-    #layout-header
+     #layout-header
     {
-        .make-row();
-
         #header
         {
-            .make-column(@grid-columns / 1,5);
+            .make-column(@grid-columns / 4);
         }
+    }
 
-        #layout-navigation
+    #layout-navigation
+    {
+
+        .zone-navigation
         {
-            .zone-navigation
-            {
-                .make-column(@grid-columns / 3);
-            }
+            .make-column(@grid-columns / 4 * 3);
         }
     }
 
@@ -59,6 +58,7 @@ body
         }
     }
 }
+
 
 // Everything below should be inside #layout-wrapper too, but the the & Combinator would mess it up, see: https://github.com/less/less.js/issues/1500
 #layout-main-container
@@ -147,6 +147,7 @@ body
     .make-row();
     margin-left: 0;
     margin-right: 0;
+    padding: 0rem;
 
     #footer-quad
     {

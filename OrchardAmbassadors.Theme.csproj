@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -14,7 +14,8 @@
     <AssemblyName>OrchardAmbassadors.Theme</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -72,83 +73,17 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\navicon.png" />
     <Content Include="Images\favicon.ico" />
-    <Content Include="Styles\ambassador.css">
-      <DependentUpon>ambassador.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\ambassador.min.css">
-      <DependentUpon>ambassador.css</DependentUpon>
-    </Content>
     <Content Include="Styles\fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
     <Content Include="Styles\fonts.min.css">
       <DependentUpon>fonts.css</DependentUpon>
     </Content>
-    <Content Include="Styles\forms.css">
-      <DependentUpon>forms.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\forms.min.css">
-      <DependentUpon>forms.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.min.css">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\glyphicons.css">
-      <DependentUpon>glyphicons.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\glyphicons.min.css">
-      <DependentUpon>glyphicons.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.min.css">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\panels.css">
-      <DependentUpon>panels.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\panels.min.css">
-      <DependentUpon>panels.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.min.css">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.css">
-      <DependentUpon>pages.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.min.css">
-      <DependentUpon>pages.css</DependentUpon>
-    </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\structure.css">
-      <DependentUpon>structure.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\structure.min.css">
-      <DependentUpon>structure.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.min.css">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
     </Content>
     <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
@@ -174,12 +109,6 @@
   <ItemGroup>
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Views\Content_Detail__Ambassador.liquid">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\Content_Summary__Ambassador.liquid">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
@@ -188,28 +117,26 @@
     <Content Include="Styles\fonts.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\forms.less" />
-    <Content Include="Styles\general.less" />
     <Content Include="Styles\ambassador.less" />
-    <Content Include="Styles\navigation.less" />
-    <Content Include="Styles\pages.less" />
     <Content Include="Styles\structure.less" />
     <Content Include="Styles\type.less" />
-    <Content Include="Styles\variables.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.less" />
     <Content Include="Styles\mixins\panels.less" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <Content Include="Styles\glyphicons.less" />
     <Content Include="Views\AdditionalResources.cshtml" />
+    <Content Include="Views\Content_Detail__Ambassador.liquid" />
+    <Content Include="Views\Content_Summary__Ambassador.liquid" />
+    <Content Include="Styles\forms.less" />
+    <Content Include="Styles\general.less" />
+    <Content Include="Styles\navigation.less" />
+    <Content Include="Styles\variables.less" />
+    <Content Include="Styles\mixins\media.less" />
+    <Content Include="Views\Parts.Title-66.liquid" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -244,7 +171,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45979</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
@@ -255,5 +183,11 @@
   </ProjectExtensions>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
   </ItemGroup>
 </Project>

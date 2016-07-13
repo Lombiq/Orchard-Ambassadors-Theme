@@ -1,16 +1,13 @@
-﻿@import "variables";
-@import "mixins/mixins";
+﻿@import "mixins/mixins";
 @import "mixins/panels";
+@import "variables";
 
-
-.zone-content ul, .zone-content ol,
 .ambassadors-detail .ambassadors-phone-location
 {
     list-style: none;
     padding: 0;
-
     ul
-    {        
+    {
         @media @media-md
         {
             -moz-column-count: unset;
@@ -25,17 +22,12 @@
         padding: 0;
         margin: 0;
     }
-    > li
-    {
-        display: inline;
-        padding: 0 1rem 0 0;
-    }
 }
 
 .ambassador-email
 {
-    font-size: 14px;
-    color: @ambassadors-orange;
+    font-size: 20px;
+    color: @ambassadors-email-color;
     font-style: italic;
     text-decoration: underline;
     line-height: 1.2;
@@ -51,77 +43,157 @@
         padding: 0;
         position: relative;
         padding-bottom: 1rem;
-        border-top-right-radius: @ambassadors-border-bottom-radius;
+        border-top-right-radius: 3rem;
 
         @media @media-md
-        { 
-            border-bottom-left-radius: @ambassadors-border-bottom-radius;
+        {
+            border-bottom-left-radius: 3rem;
             border-top-right-radius: 0;
             padding-bottom: 0;
         }
     }
 }
 
-.ambassadors-profile
-{   
+.ambassadors-profile-summary
+{
     @media @media-md
     {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
     }
+
+    .ambassadors-detail
+    {
+        margin: 1rem;
+
+        @media @media-md
+        {
+            margin: 0;
+        }
+
+        .ambassador-name
+        {
+            h1
+            {
+                margin-bottom: 0;
+
+                a
+                {
+                    font-size: 20px;
+                    color: @ambassadors-name-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .ambassadors-phone-location
+        {
+            li
+            {
+                font-size: 12px;
+                padding: 0 1rem 0 0;
+            }
+        }
+
+        .ambassador-email
+        {
+            font-size: 14px;
+        }
+    }
+}
+
+.ambassadors-phone-location
+{
+    ul
+    {
+        padding-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    li
+    {
+        color: @ambassadors-phone-color;
+        text-transform: uppercase;
+        line-height: 1.2;
+        display: inline;
+    }
+}
+
+.ambassador-name
+{
+    h1
+    {
+        margin-bottom: 0;
+        color: @ambassadors-name-color;
+        text-decoration: none;
+    }
 }
 
 .ambassadors-detail
 {
-    margin: 1rem;
     display: inline-block;
-
-    h2
-    {
-        a
-        {
-            color: @ambassadors-greenish-gray;
-            font-size: 20px;
-            line-height: 1.5;
-            text-decoration:none;
-        }
-    }
 
     p
     {
         margin: 2rem 0;
     }
 
-    .ambassadors-phone-location
+    .ambassador-profile-picture
     {
-        li
+        img
         {
-          font-size: 12px;
-          color: @ambassadors-gray-light;
-          text-transform: uppercase;
-          line-height: 1.2;
+            float: left;
+            height: auto;
+            width: 30rem;
+            padding: 0 2rem 1rem 0;
+            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 0;
         }
     }
-
-
+    
+    .ambassador-email
+    {
+        font-size: 20px;
+    }
+    
     .ambassador-description
     {
         font-size: 14px;
-        color: @ambassadors-gray-light;
-
+        color: @ambassadors-description-color;
         margin-right: 3rem;
         line-height: 1.2em;
         text-align: left;
         padding-bottom: 1rem;
     }
+
+    .ambassadors-phone-location
+    {
+        ul
+        {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.ambassadors-text-crop
+{
+    line-height: 1.3em;
+    overflow: hidden;
+}
+
+.ambassadors-description-crop
+{
+    .ambassadors-text-crop();
+
+    height: 7rem;
 }
 
 .ambassadors-projection-page
 {
     ul
     {
-       
         @media @media-md
         {
             -moz-column-count: 2;
