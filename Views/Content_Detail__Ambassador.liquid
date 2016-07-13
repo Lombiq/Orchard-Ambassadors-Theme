@@ -1,24 +1,24 @@
-﻿<div class="ambassadors-profile">
+﻿<div class="ambassadors-profile-detail ambassadors-detail">
   <div class="ambassador-profile-picture">
-    <img class="" src="{{ Model.ContentItem.Ambassador.Profilepicture.FirstMediaUrl }}" alt="Profile picture" />
+    <img src="{{ Model.ContentItem.Ambassador.Profilepicture.FirstMediaUrl }}" alt="Profile picture" />
   </div>
-  <div class="ambassadors-detail">
-    <h2>
-      <a href="Contents/Item/Display/{{ Model.ContentItem.Ambassador.TitlePart.Id }}">{{ Model.ContentItem.Ambassador.TitlePart.Title }}</a>
-    </h2>
-    <span class="ambassador-email">
-      <a href="mailto: {{ Model.ContentItem.Ambassador.Email.Value }}">{{ Model.ContentItem.Ambassador.Email.Value }}</a>
-    </span>
-    <ul class="ambassadors-phone-location">
-      <li>
-        <i class="glyphicon glyphicon-phone-alt"></i> {{ Model.ContentItem.Ambassador.PhoneNumber.Value }}
-      </li>
-      <li>
-        <i class="glyphicon glyphicon-map-marker"></i> {{ Model.ContentItem.Ambassador.Location.Value }}
-      </li>
-    </ul>
-    <div class="ambassador-description">
-      {{ Model.ContentItem.Ambassador.BodyPart.Text }}
-    </div>
+  <div class="ambassador-name">
+  <h1>
+    {{ Model.ContentItem.Ambassador.TitlePart.Title }}
+  </h1>
+  </div>
+  <span class="ambassador-email">
+    <a href="mailto: {{ Model.ContentItem.Ambassador.Email.Value }}">{{ Model.ContentItem.Ambassador.Email.Value }}</a>
+  </span>
+  <ul class="ambassadors-phone-location">
+    <li>
+      <i class="glyphicon glyphicon-phone-alt"></i> {{ Model.ContentItem.Ambassador.PhoneNumber.Value }}
+    </li>
+    <li>
+      <i class="glyphicon glyphicon-map-marker"></i> {{ Model.ContentItem.Ambassador.Location.Value }}
+    </li>
+  </ul>
+  <div class="ambassador-description">
+    {{ Model.ContentItem.Ambassador.BodyPart.Text }}
   </div>
 </div>

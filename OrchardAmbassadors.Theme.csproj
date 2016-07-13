@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OrchardAmbassadors.Theme</RootNamespace>
     <AssemblyName>OrchardAmbassadors.Theme</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -55,10 +55,6 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
@@ -66,6 +62,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\background.jpg" />
@@ -73,83 +73,17 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\navicon.png" />
     <Content Include="Images\favicon.ico" />
-    <Content Include="Styles\ambassador.css">
-      <DependentUpon>ambassador.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\ambassador.min.css">
-      <DependentUpon>ambassador.css</DependentUpon>
-    </Content>
     <Content Include="Styles\fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
     <Content Include="Styles\fonts.min.css">
       <DependentUpon>fonts.css</DependentUpon>
     </Content>
-    <Content Include="Styles\forms.css">
-      <DependentUpon>forms.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\forms.min.css">
-      <DependentUpon>forms.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.min.css">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\glyphicons.css">
-      <DependentUpon>glyphicons.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\glyphicons.min.css">
-      <DependentUpon>glyphicons.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.min.css">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\panels.css">
-      <DependentUpon>panels.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\panels.min.css">
-      <DependentUpon>panels.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.min.css">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.css">
-      <DependentUpon>pages.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.min.css">
-      <DependentUpon>pages.css</DependentUpon>
-    </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\structure.css">
-      <DependentUpon>structure.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\structure.min.css">
-      <DependentUpon>structure.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.min.css">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
     </Content>
     <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
@@ -164,21 +98,17 @@
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
       <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
       <Name>Orchard.Framework</Name>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\site.less" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Views\Content_Detail__Ambassador.liquid">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\Content_Summary__Ambassador.liquid">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
@@ -187,28 +117,26 @@
     <Content Include="Styles\fonts.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\forms.less" />
-    <Content Include="Styles\general.less" />
     <Content Include="Styles\ambassador.less" />
-    <Content Include="Styles\navigation.less" />
-    <Content Include="Styles\pages.less" />
     <Content Include="Styles\structure.less" />
     <Content Include="Styles\type.less" />
-    <Content Include="Styles\variables.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.less" />
     <Content Include="Styles\mixins\panels.less" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <Content Include="Styles\glyphicons.less" />
     <Content Include="Views\AdditionalResources.cshtml" />
+    <Content Include="Views\Content_Detail__Ambassador.liquid" />
+    <Content Include="Views\Content_Summary__Ambassador.liquid" />
+    <Content Include="Styles\forms.less" />
+    <Content Include="Styles\general.less" />
+    <Content Include="Styles\navigation.less" />
+    <Content Include="Styles\variables.less" />
+    <Content Include="Styles\mixins\media.less" />
+    <Content Include="Views\Parts.Title-66.liquid" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -253,4 +181,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+  </ItemGroup>
 </Project>
