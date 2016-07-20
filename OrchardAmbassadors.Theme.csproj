@@ -118,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\ambassador.less" />
-    <Content Include="Styles\structure.less" />
     <Content Include="Styles\type.less" />
   </ItemGroup>
   <ItemGroup>
@@ -126,16 +125,18 @@
     <Content Include="Styles\mixins\panels.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\glyphicons.less" />
     <Content Include="Views\AdditionalResources.cshtml" />
-    <Content Include="Views\Content_Detail__Ambassador.liquid" />
-    <Content Include="Views\Content_Summary__Ambassador.liquid" />
+    <Content Include="Views\Content_Detail__Ambassador.liquid">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Content_Summary__Ambassador.liquid">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Styles\forms.less" />
     <Content Include="Styles\general.less" />
     <Content Include="Styles\navigation.less" />
     <Content Include="Styles\variables.less" />
     <Content Include="Styles\mixins\media.less" />
-    <Content Include="Views\Parts.Title-1459.liquid" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
