@@ -6,7 +6,7 @@
     </Match>
 
     <Match
-        Path="find-the-nearest-orchard-ambassador"
+        Path="~/find-the-nearest-orchard-ambassador"
         ContentType="ProjectionPage">
         <Place Parts_Title="-"/>
     </Match>
