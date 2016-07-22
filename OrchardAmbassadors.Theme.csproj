@@ -12,9 +12,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OrchardAmbassadors.Theme</RootNamespace>
     <AssemblyName>OrchardAmbassadors.Theme</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -23,6 +24,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -53,10 +55,6 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
@@ -64,47 +62,32 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Images\Background.jpg" />
-    <Content Include="Content\Images\location-sign.png" />
-    <Content Include="Content\Images\logo-big.png" />
-    <Content Include="Content\Images\logo.png" />
-    <Content Include="Content\Images\logo_small.png" />
-    <Content Include="Content\Images\phone-logo.png" />
-    <Content Include="Content\Images\portrait.png" />
-    <Content Include="Content\Images\search.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\logo-big.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\navicon.png" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Styles\fonts.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
-    <Content Include="Styles\forms.css">
-      <DependentUpon>forms.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\pages.css">
-      <DependentUpon>pages.less</DependentUpon>
+    <Content Include="Styles\fonts.min.css">
+      <DependentUpon>fonts.css</DependentUpon>
     </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
+    <Content Include="Styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
     </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
+    <Content Include="ThemeZonePreview.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
-    <Content Include="Styles\Web.config" />
-    <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info">
@@ -115,118 +98,45 @@
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
       <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
       <Name>Orchard.Framework</Name>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\site.less" />
+    <Content Include="Styles\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\pages.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site.css.map">
-      <DependentUpon>site.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\variables.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\general.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\type.less" />
+    <Content Include="Images\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\fonts.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\fonts.css.map">
-      <DependentUpon>fonts.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\type.css.map">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\general.css.map">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\navigation.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\navigation.css.map">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\forms.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\forms.css.map">
-      <DependentUpon>forms.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\pages.css.map">
-      <DependentUpon>pages.css</DependentUpon>
-    </Content>
+    <Content Include="Styles\ambassador.less" />
+    <Content Include="Styles\type.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\mixins\mixins.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\mixins\mixins.css.map">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Parts.MenuWidget-MenuWidget.liquid">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Branding.liquid" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Bold.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-BoldItalic.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Italic.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Regular.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-Semibold.otf" />
-    <Content Include="Content\Fonts\ACaslonPro\ACaslonPro-SemiboldItalic.otf" />
-    <Content Include="Content\Fonts\Georgia\georgia.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiab.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiai.ttf" />
-    <Content Include="Content\Fonts\Georgia\georgiaz.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Bold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-BoldItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Italic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Light.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-LightItalic.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Regular.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-Semibold.ttf" />
-    <Content Include="Content\Fonts\OpenSans\OpenSans-SemiboldItalic.ttf" />
-    <Content Include="Content\Fonts\Vani\Vani.ttf" />
-    <Content Include="Content\Fonts\Vani\Vanib.ttf" />
+    <Content Include="Styles\mixins\panels.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\AdditionalResources.cshtml" />
+    <Content Include="Views\Content_Detail__Ambassador.liquid">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Content_Summary__Ambassador.liquid">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\forms.less" />
+    <Content Include="Styles\general.less" />
+    <Content Include="Styles\navigation.less" />
+    <Content Include="Styles\variables.less" />
+    <Content Include="Styles\mixins\media.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -262,7 +172,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45979</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
@@ -271,4 +182,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+  </ItemGroup>
 </Project>

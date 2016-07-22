@@ -1,139 +1,116 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
+@import "mixins/media";
 @import "variables";
-@import "mixins/mixins";
-
-/* Navigation
-***************************************************************/
 
 #layout-wrapper
 {
     #layout-navigation
     {
-        margin: 0;
         width: 100%;
-        float: right;
-
-        @media @media-lg
-        {
-            position: absolute;
-            top: 0;
-        }
+        padding: 0;
+        margin: 0;
 
         .zone-navigation
         {
-            background: @ambassadors-color-light-grey;
-            margin-top: 1.5rem;
-            padding-right: 0;
+            background-color: @ambassadors-header-bg-color;
+            float: unset;
+            width: 100%;
 
-            @media @media-lg
+            @media @media-sm
             {
-                background: none;
-                float: none;
-                width: @screen-md-min;
-                margin: 0 auto;
-                height: 7.5rem;
+                min-height: 7rem;
             }
 
-            .widget-menu-widget .menu
+            .widget-menu-widget
             {
-                @media @media-lg
-                {
-                    padding-left: 31.5rem;
-                    width: 100%;
-                    float: right;
-                    top: 1rem;
-                }
+                .ambassadors-content-center();
+                width: 100% !important;
+                background-color: @ambassadors-header-bg-color;
 
-                li
+                nav
                 {
-                    width: unset;
-                    display: block;
-                    margin: 0;
+                    padding-top: 7rem;
+
+                    @media @media-md
+                    {
+                        padding-top: 0;
+                        padding-left: 18rem;
+                    }
 
                     @media @media-lg
                     {
-                        padding-top: 1rem;
-                        vertical-align: middle;
-                        float: left;
-                        display: inline-block;
-                    }
-
-                    a
-                    {
-                        padding: 0 1.5rem 0 2.4rem;
-
-                        @media @media-lg
-                        {
-                            padding: 0.5rem 1.5rem 0.5rem 2.4rem;
-                        }
-
-                        text-align: left;
-                        color: @ambassadors-text-color;
-                        text-decoration: none;
-                        display: inline-block;
-
-                        span
-                        {
-                            font-size: 12px;
-                        }
-
-                        &:hover, &:active, &:focus
-                        {
-                            background: none;
-                        }
-                    }
-
-                    &.current
-                    {
-                        a
-                        {
-                            .ambassadors-menuitem-style();
-
-                            &:hover, &:active, &:focus
-                            {
-                                .ambassadors-menuitem-style();
-                            }
-                        }
+                        padding-left: 0;
+                        float: right;
                     }
                 }
 
-                .last
+                .menu
                 {
-                    width: unset;
-                    float: left;
-                    display: inline-block;
+                    background-color: @ambassadors-menu-bg-color;
 
-                    a
+                    > li
                     {
-                        @media @media-lg
+                        width: auto;
+                        margin-left: 0;
+
+                        a
                         {
-                            .ambassadors-last-menuitem-style();
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                            text-decoration: none;
+                            border-radius: 0;
+                            border: none;
+                            margin-left: 0.2rem;
+                            padding-left: 4rem;
+
+                            &:hover
+                            {
+                                background-color: @ambassadors-menu-bg-color;
+                                color: @ambassadors-menu-color;
+                                background: url("../Images/navicon.png") no-repeat center left;
+                                background-position: 1.3rem;
+                            }
                         }
 
-                        &:hover, &:active, &:focus
+                        p > a
                         {
-                            @media @media-lg
-                            {
-                                .ambassadors-last-menuitem-style();
-                            }
+                            padding-top: 0.2rem;
+                            padding-bottom: 0.2rem;
                         }
                     }
 
-                    &.current
+                    > li.current a
+                    {
+                        background-color: @ambassadors-menu-bg-color;
+                        color: @ambassadors-menu-color;
+                        border: none;
+                        background: url("../Images/navicon.png") no-repeat center left;
+                        background-position: 1.3rem;
+
+                        &:hover
+                        {
+                            background-color: @ambassadors-menu-bg-color;
+                            color: @ambassadors-menu-color;
+                        }
+                    }
+
+                    > li.last
                     {
                         a
                         {
-                            @media @media-lg
-                            {
-                                .ambassadors-last-current-menuitem-style();
-                            }
+                            background: none;
+                            background-color: @ambassadors-menu-bg-hover-color;
+                            color: @ambassadors-menu-hover-color;
+                            opacity: 0.8;
+                            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                            margin-left: 4rem;
+                            border-radius: 1rem;
 
-                            &:hover, &:active, &:focus
+                            &:hover
                             {
-                                @media @media-lg
-                                {
-                                    .ambassadors-last-current-menuitem-style();
-                                }
+                                background: none;
+                                background-color: @ambassadors-menu-bg-hover-color;
+                                color: @ambassadors-menu-hover-color;
                             }
                         }
                     }

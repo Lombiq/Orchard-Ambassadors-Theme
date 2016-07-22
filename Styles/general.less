@@ -1,380 +1,193 @@
-﻿@import "variables";
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/mixins";
+@import "mixins/media";
 @import "mixins/mixins";
+@import "mixins/panels";
+@import "variables";
 
 body
 {
-    font-size: @ambassadors-base-font-size;
-    background: @ambassadors-color-light-grey;
-
-    @media @media-lg
-    {
-        background: url(../Content/Images/Background.jpg) no-repeat fixed;
-        background-size: 100%;
-        background-position: left top;
-    }
-
-    line-height: 1.6em;
-
-    &::before
-    {
-        content: '';
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: -moz-linear-gradient(top, @ambassadors-background-gradient-color-1 0, @ambassadors-background-gradient-color-1 45%, @ambassadors-background-gradient-color-2 65%, @ambassadors-background-gradient-color-2 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@ambassadors-background-gradient-color-1), color-stop(45%,@ambassadors-background-gradient-color-1), color-stop(65%,@ambassadors-background-gradient-color-2), color-stop(100%,@ambassadors-background-gradient-color-2));
-        background: -webkit-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
-        background: -o-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
-        background: -ms-linear-gradient(top, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
-        background: linear-gradient(to bottom, @ambassadors-background-gradient-color-1 0,@ambassadors-background-gradient-color-1 45%,@ambassadors-background-gradient-color-2 65%,@ambassadors-background-gradient-color-2 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-background-gradient-color-hex1, endColorstr=@ambassadors-background-gradient-color-hex2,GradientType=0 );
-        background-attachment: fixed;
-    }
-
+    background-color: @ambassadors-black-light-color;
     color: @ambassadors-text-color;
+    font-size: @ambassadors-base-font-size;
+    line-height: 1.6em;
 }
 
-ol, ul
+#layout-main-container
 {
-    list-style: disc;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 90%, @ambassadors-black-light-color 98%), url(../Images/background.jpg);
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    #layout-main
+    {
+        .ambassadors-content-center();
+        padding: 5rem 0 1rem;
+
+        @media @media-lg
+        {
+            padding: 25rem 0 1rem;
+        }
+
+        #layout-content
+        {
+            &::after
+            {
+                content: '';
+                position: absolute;
+                right: 0;
+                left: 0;
+                height: 7.4rem;
+                background: url("../Images/logo-big.png") no-repeat center bottom;
+                margin-top: -9rem;
+            }
+
+            .zone-content
+            {
+                .ambassadors-panel-body ();
+
+                .ambassadors-searchbar
+                {
+                    padding: 3rem 0;
+                    display: flex;
+
+                    .ambassadors-search-button
+                    {
+                        border: 0;
+                        border-radius: 0 1rem 1rem 0;
+                        margin-top: 0;
+                        background-color: @ambassadors-orange-color;
+                        color: @ambassadors-white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Header */
+#layout-wrapper
+{
     padding: 0;
     margin: 0;
+
+    #layout-header
+    {
+        padding: 0;
+        margin: 0;
+        background: @ambassadors-menu-bg-color;
+
+        .zone-header
+        {
+            .ambassadors-content-center();
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            z-index: 1;
+
+            #branding
+            {
+                margin: 0;
+                width: 100%;
+                padding-left: 0;
+                height: 0;
+
+                a
+                {
+                    width: 27rem;
+                    height: 5rem;
+                    position: absolute;
+                    margin: auto;
+                    background-image: url(../Images/logo.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: block;
+                    outline: 0;
+                    .text-hide();
+                    text-align: center;
+                    z-index: 1;
+
+                    &:hover,
+                    &:active,
+                    &:focus
+                    {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
-li
+#layout-main-container,
+#footer-quad
 {
-    margin: 1rem 0;
+    .widget
+    {
+        .ambassadors-panel-body ();
+    }
 }
 
+/* Links */
 a
 {
     color: @ambassadors-link-color;
     text-decoration: underline;
 
-    &:hover
-    {
-        color: @ambassadors-link-color;
-        text-decoration: underline;
-    }
-
-    &:active, &:visited
+    &:hover,
+    &:active,
+    &:visited
     {
         color: @ambassadors-link-color;
         text-decoration: underline;
     }
 }
 
-#layout-wrapper
+/* Footer */
+.credits
+{
+    font-size: 0.9em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.user-display
+{
+    display: none;
+}
+
+#layout-footer
+{
+    #footer-quad,
+    #footer-sig
+    {
+        margin: 0;
+    }
+}
+
+.zone-footer
 {
     width: 100%;
-    padding: 0;
+    text-align: center;
+    padding: 1rem 5rem;
+    color: @ambassadors-footer-color;
+    border-top: 1px solid @ambassadors-footer-border-color;
+    background: @ambassadors-footer-gradient-start-color;
+    background: -moz-linear-gradient(top, @ambassadors-footer-gradient-start-color 0 ambassadors-footer-gradient-end-color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@ambassadors-footer-gradient-start-color), color-stop(100%,ambassadors-footer-gradient-end-color));
+    background: -webkit-linear-gradient(top, @ambassadors-footer-gradient-start-color 0,ambassadors-footer-gradient-end-color 100%);
+    background: -o-linear-gradient(top, @ambassadors-footer-gradient-start-color 0,ambassadors-footer-gradient-end-color 100%);
+    background: -ms-linear-gradient(top, @ambassadors-footer-gradient-start-color 0,ambassadors-footer-gradient-end-color 100%);
+    background: linear-gradient(to bottom, @ambassadors-footer-gradient-start-color 0,ambassadors-footer-gradient-end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-start-color, endColorstr=ambassadors-footer-gradient-end-color,GradientType=0 );
 
-    #layout-header
+    a
     {
-        background: @ambassadors-header-background-color;
-        box-shadow: 0 0 1.11rem @ambassadors-color-black;
-        height: 7.5rem;
-        margin: 0;
-        width: 100%;
-
-        #header
-        {
-            width: 100%;
-
-            .zone-header
-            {
-                padding-right: 0;
-                padding-left: 0;
-
-                @media @media-lg
-                {
-                    margin: 0 auto;
-                    width: @screen-md-min;
-                }
-
-                height: 7.5rem;
-                vertical-align: middle;
-
-                #branding
-                {
-                    position: relative;
-
-                    a
-                    {
-                        width: 28rem;
-                        height: 7rem;
-                        background-image: url("../Content/Images/logo.png");
-                        background-repeat: no-repeat;
-                        background-position: center left;
-                        vertical-align: middle;
-                        position: absolute;
-                        z-index: 10;
-                        top: -0.8rem;
-                    }
-                }
-            }
-        }
-    }
-
-    #layout-main-container
-    {
-        margin-left: 0;
-        margin-right: 0;
-
-        #layout-main
-        {
-            #layout-content
-            {
-                padding: 0 0 1rem;
-
-                @media @media-lg
-                {
-                    padding: 22rem 0 1rem;
-                }
-
-                #content
-                {
-                    .zone-content
-                    {
-                        position: relative;
-
-                        &::after
-                        {
-                            content: '';
-                            position: absolute;
-                            right: 0;
-                            bottom: -3.2rem;
-                            left: 0;
-                            height: 7.4rem;
-                            background: url("../Content/Images/logo-big.png") no-repeat bottom;
-                        }
-
-                        padding: 0 1rem 1rem;
-
-                        @media @media-lg
-                        {
-                            border-radius: 1.66rem;
-                            border-top-left-radius: 0;
-                            margin: 0 auto;
-                            width: @screen-md-min;
-                            padding: 0 5rem 5rem;
-                        }
-
-                        box-shadow: 0 0 1.11rem @ambassadors-color-medium-grey;
-                        background-color: @ambassadors-content-background-color;
-
-                        h1
-                        {
-                            border: 0;
-                            margin: 0;
-                            padding-top: 5rem;
-                            padding-bottom: 0rem;
-                        }
-
-                        p
-                        {
-                            margin: 3.5rem 0;
-                        }
-
-                        .ambassadors-search-map
-                        {
-                            margin: auto -2rem;
-                            margin-bottom: 3rem;
-
-                            @media @media-lg
-                            {
-                                margin: auto -5rem;
-                                margin-bottom: 3rem;
-                            }
-
-                            img
-                            {
-                                width: 100%;
-                            }
-                        }
-
-                        .ambassadors-searchbar
-                        {
-                            .ambassadors-search-input
-                            {
-                                width: calc(100% - 5rem);
-                            }
-
-                            .ambassadors-search-button
-                            {
-                                height: 2.6em;
-                                width: 2.6em;
-                                border: 0;
-                                border-radius: 0 1rem 1rem 0;
-                                margin-top: 0;
-                                background: url("../Content/Images/search.png") center;
-                                outline: 0;
-                                padding: 0;
-                                float: left;
-                            }
-                        }
-
-                        .ambassadors-search-result-container
-                        {
-                            margin: auto -1.5rem;
-
-                            .ambassadors-search-result
-                            {
-                                list-style: none;
-                                padding: 0;
-                                text-align: center;
-                                width: 100%;
-
-                                li
-                                {
-                                    text-align: left;
-                                    width: 90%;
-                                    margin: 2.5rem 2rem;
-
-                                    @media @media-xsm
-                                    {
-                                        width: 85%;
-                                        margin: 2.5rem 2rem;
-                                    }
-
-                                    @media @media-lg
-                                    {
-                                        width: 40rem;
-                                        margin: 2.5rem 2rem;
-                                    }
-
-                                    background: @ambassadors-content-background-color;
-                                    box-shadow: 0 0 1.11rem rgba(85, 85, 85, 0.5);
-                                    border-radius: 1.66rem;
-                                    border-top-left-radius: 0;
-                                    display: inline-block;
-
-                                    .ambassador-portrait
-                                    {
-                                        background: url("../Content/Images/portrait.png");
-                                        width: 12rem;
-                                        height: 20rem;
-                                        float: left;
-                                        border-bottom-left-radius: 1.66rem;
-                                    }
-
-                                    .ambassador-details
-                                    {
-                                        margin-left: 12rem;
-
-                                        h4
-                                        {
-                                            color: @ambassadors-details-name-color;
-                                            font-size: 1.11em;
-                                            margin: 2rem 2rem 0.5rem;
-                                        }
-
-                                        p
-                                        {
-                                            margin: 0.5rem 2rem;
-                                            font-size: 0.77em;
-                                        }
-
-                                        ul
-                                        {
-                                            padding: 0;
-                                            width: 100%;
-                                            margin: 0 2rem;
-
-                                            .ambassador-phone-number
-                                            {
-                                                margin: 0.5rem 0rem;
-                                                .ambassadors-contact-detail-style();
-                                                background: url("../Content/Images/phone-logo.png") no-repeat;
-                                            }
-
-                                            .ambassador-location
-                                            {
-                                                margin: 0.5rem 0rem 0.5rem 1rem;
-                                                .ambassadors-contact-detail-style();
-                                                text-transform: uppercase;
-                                                background: url("../Content/Images/location-sign.png") no-repeat;
-                                            }
-                                        }
-
-                                        .ambassador-description
-                                        {
-                                            margin-right: 3rem;
-                                            line-height: 1.2em;
-                                            text-align: left;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #layout-footer
-    {
-        #footer
-        {
-            #footer-quad
-            {
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            #footer-sig
-            {
-                margin-left: 0;
-                margin-right: 0;
-
-                .zone-footer
-                {
-                    font-size: 0.77em;
-                    padding: 0;
-
-                    a
-                    {
-                        .ambassadors-footer-link-style();
-
-                        &:hover, &:active, &:visited
-                        {
-                            .ambassadors-footer-link-style();
-                        }
-                    }
-
-
-                    .user-display
-                    {
-                        padding: 0.7rem 0 0.4rem 0;
-
-                        a
-                        {
-                            margin: auto 0.5rem;
-                        }
-
-                        .user-actions
-                        {
-                            margin: auto 2rem;
-                        }
-                    }
-
-                    width: 100%;
-                    text-align: center;
-                    margin: 10rem 0 0;
-                    border-top: 1px solid @ambassadors-footer-border-color;
-                    background: @ambassadors-footer-gradient-color-1;
-                    background: -moz-linear-gradient(top, @ambassadors-footer-gradient-color-1 0 @ambassadors-footer-gradient-color-2 100%);
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@ambassadors-footer-gradient-color-1), color-stop(100%,@ambassadors-footer-gradient-color-2));
-                    background: -webkit-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                    background: -o-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                    background: -ms-linear-gradient(top, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                    background: linear-gradient(to bottom, @ambassadors-footer-gradient-color-1 0,@ambassadors-footer-gradient-color-2 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ambassadors-footer-gradient-color-1, endColorstr=@ambassadors-footer-gradient-color-2,GradientType=0 );
-                }
-            }
-        }
+        color: @ambassadors-footer-link-color;
+        text-decoration: none;
     }
 }

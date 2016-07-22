@@ -1,5 +1,18 @@
 <Placement>
 
-  <Place Parts_Common_Metadata = "-" />
+    <Match
+        ContentType="Page">
+        <Place Parts_Common_Metadata = "-" />
+    </Match>
+    <Match
+        ContentType="Form">
+        <Place Parts_Common_Metadata = "-" />        
+    </Match>
+
+    <Match
+        Path="~/find-the-nearest-orchard-ambassador"
+        ContentType="ProjectionPage">
+        <Place Parts_Title="-"/>
+    </Match>
 
 </Placement>

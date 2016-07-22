@@ -1,24 +1,30 @@
-﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/utilities.less";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/type";
 @import "variables";
 
-/* Typography
-***************************************************************/
-
+/* Typography */
 p
 {
     text-align: justify;
 }
 
 /* Headings */
-
 h1
 {
     font-size: 1.7em;
-
     small
     {
         font-size: 1.6em;
     }
+}
+
+.zone-content 
+> .content-item:first-of-type 
+> header h1
+{
+    padding-bottom: 2rem;
+    border-bottom: 0;
+    font-size: 2.6em;
 }
 
 h2
@@ -52,4 +58,91 @@ h5
 h6
 {
     font-size: 1.1em;
+}
+
+/* Fonts */
+.ambassadors-font-normal()
+{
+    font-family: "Open Sans Light";
+}
+
+.ambassadors-font-georgia()
+{
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.ambassadors-font-georgia-italic()
+{
+    .ambassadors-font-georgia();
+    font-style: italic;
+}
+
+.ambassadors-font-light-italic()
+{
+    .ambassadors-font-normal();
+    font-style: italic;
+}
+
+.ambassadors-font-vani-normal()
+{
+    font-family: "Vani";
+}
+
+.ambassadors-font-menu()
+{
+    .ambassadors-font-georgia();
+    font-size: smaller;
+}
+
+textarea
+{
+    .ambassadors-font-georgia-italic();
+}
+
+body
+{
+    .ambassadors-font-normal();
+
+    h1, h2, h3, h4, h5, h6
+    {
+        .ambassadors-font-georgia();
+
+        > a
+        {
+            .ambassadors-font-georgia();
+        }
+    }
+}
+
+a
+{
+    .ambassadors-font-light-italic();
+}
+
+#layout-wrapper #layout-footer #footer #footer-sig .zone-footer
+{
+    .ambassadors-font-vani-normal();
+
+    a
+    {
+        .ambassadors-font-vani-normal();
+
+        &:hover, &:active, &:visited
+        {
+            .ambassadors-font-vani-normal();
+        }
+    }
+}
+
+#layout-wrapper #layout-navigation .zone-navigation .widget-menu-widget .menu li a
+{
+    .ambassadors-font-menu();
+
+        .conjunction
+        {
+            .ambassadors-font-georgia-italic();
+            font-size: x-small;
+        }
 }

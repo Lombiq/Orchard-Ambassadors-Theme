@@ -1,45 +1,48 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/variables";
 
-/* Variables
-***************************************************************/
+/* variables */
+@ambassadors-base-font-size: 18px;
+@ambassadors-max-width: 1200px;
 
 /* Colors */
+@ambassadors-black-light-color: #191919;
+@ambassadors-gray-color: #555555;
+@ambassadors-gray-darker-color: #43463c;
+@ambassadors-gray-dark-color: #303030;
+@ambassadors-gray-light-color: #777777;
+@ambassadors-greenish-gray-color: #757a71;
+@ambassadors-white-color: #ffffff;
+@ambassadors-smoke-white-color: #f9f9f9;
+@ambassadors-orange-color: #ff7733;
 
-@ambassadors-color-black: #000000;
-@ambassadors-color-white: #ffffff;
-@ambassadors-color-smoke-white: #f9f9f9;
-@ambassadors-color-light-grey: #e9ede6;
-@ambassadors-color-medium-grey: #555555;
-@ambassadors-color-darker-grey: #43463c;
-@ambassadors-color-dark-grey: #191919;
-@ambassadors-color-greenish-grey: #757b71;
-@ambassadors-color-orange: #ff7733;
+@ambassadors-text-color: @ambassadors-gray-color;
+@ambassadors-bg-color: @ambassadors-black-light-color;
+@ambassadors-input-background-color: @ambassadors-smoke-white-color;
+@ambassadors-panel-boy-shadow-color: @ambassadors-gray-color;
+@ambassadors-panel-content-background-color: @ambassadors-white-color;
 
-@ambassadors-background-color: @ambassadors-color-medium-grey;
-@ambassadors-heading-color: @ambassadors-color-medium-grey;
-@ambassadors-text-color: @ambassadors-color-medium-grey;
-@ambassadors-link-color: @ambassadors-color-orange;
-@ambassadors-content-background-color: @ambassadors-color-white;
-@ambassadors-header-background-color: @ambassadors-color-white;
-@ambassadors-footer-link-color: @ambassadors-color-white;
-@ambassadors-footer-border-color: @ambassadors-color-darker-grey;
-@ambassadors-navigation-apply-background-color: @ambassadors-color-medium-grey;
-@ambassadors-navigation-apply-text-color: @ambassadors-color-white;
-@ambassadors-input-background-color: @ambassadors-color-smoke-white;
-@ambassadors-submit-button-background-color: @ambassadors-color-orange;
-@ambassadors-background-gradient-color: @ambassadors-color-dark-grey;
-@ambassadors-details-name-color: @ambassadors-color-greenish-grey;
-@ambassadors-sub-heading-color: @ambassadors-color-greenish-grey;
+@ambassadors-header-bg-color: @ambassadors-white-color;
+@ambassadors-sub-heading-color: @ambassadors-greenish-gray-color;
 
-@ambassadors-background-gradient-color-1: rgba(25, 25, 25, 0);
-@ambassadors-background-gradient-color-2: rgba(25, 25, 25, 1);
-@ambassadors-background-gradient-color-hex1: #00191919;
-@ambassadors-background-gradient-color-hex2: #191919;
+@ambassadors-footer-link-color: @ambassadors-white-color;
+@ambassadors-footer-gradient-start-color: @ambassadors-gray-dark-color;
+@ambassadors-footer-gradient-end-color: @ambassadors-gray-darker-color;
+@ambassadors-footer-color: @ambassadors-greenish-gray-color;
+@ambassadors-footer-border-color: @ambassadors-gray-darker-color;
 
-@ambassadors-footer-gradient-color-1: #303030;
-@ambassadors-footer-gradient-color-2: #222222;
+@ambassadors-menu-color: @ambassadors-gray-color;
+@ambassadors-menu-bg-color: @ambassadors-white-color;
+@ambassadors-menu-bg-hover-color: @ambassadors-gray-light-color;
+@ambassadors-menu-hover-color: @ambassadors-white-color;
+@ambassadors-link-color: @ambassadors-orange-color;
+
+@ambassadors-email-color: @ambassadors-orange-color;
+@ambassadors-description-color: @ambassadors-gray-light-color;
+@ambassadors-name-color: @ambassadors-greenish-gray-color;
+@ambassadors-phone-color: @ambassadors-gray-light-color;
 
 /* Media queries */
+@screen-sm-min: 48em;
 @screen-xsm-min: 30em;
 @screen-sm-min: 42.66em; // ~768px
 @screen-md-min: 53.33em; // ~960px in Chrome, more in FF...
@@ -48,11 +51,9 @@
 @screen-xxl-min: 88.88.9em; // ~1600px
 
 // The tilde is needed so the quotes won't be printed
-@media-xsm: ~"only screen and (min-width: @{screen-xsm-min})";
+@media-xs: ~"only screen and (min-width: @{screen-xs-min})";
 @media-sm: ~"only screen and (min-width: @{screen-sm-min})";
 @media-md: ~"only screen and (min-width: @{screen-md-min})";
 @media-lg: ~"only screen and (min-width: @{screen-lg-min})";
 @media-xl: ~"only screen and (min-width: @{screen-xl-min})";
 @media-xxl: ~"only screen and (min-width: @{screen-xxl-min})";
-
-@ambassadors-base-font-size: 18px;
