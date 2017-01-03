@@ -1,18 +1,8 @@
-# Orchard Ambassadors Theme Orchard Theme Readme
+# Orchard Ambassadors Theme Orchard theme readme
 
 
 ## Project Description
 
-Orchard Ambassadors Theme is a Orchard theme built on DotNest Media Theme.
-PGBBT is the base for the themes.
+Orchard Ambassadors Theme is an [Orchard CMS](http://orchardproject.net/) theme built as a [DotNest Media Theme](https://dotnest.com/knowledge-base/topics/theming/writing-a-dotnest-theme-from-scratch), providing the styling for the [Orchard Ambassadors homepage](http://ambassadors.orchardproject.net/).
 
-The theme is also available for DotNest sites. (will be available???)
-
-
-Live preview: https://orchardambassadors.dotnest.com/
-
-The theme source is available:
-* https://bitbucket.org/Lombiq/orchard-ambassadors-theme (Mercurial repository)
-* Design files: https://bitbucket.org/Lombiq/dotnest-sites-designs
-
-This project is developed by Lombiq Technologies Ltd. Commercial-grade support is available through Lombiq.
+The theme's main source repository is under [https://bitbucket.org/Lombiq/orchard-ambassadors-theme](https://bitbucket.org/Lombiq/orchard-ambassadors-theme). The project is developed by [Lombiq Technologies Ltd.](https://lombiq.com/).
